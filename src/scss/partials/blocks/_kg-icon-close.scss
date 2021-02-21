@@ -1,0 +1,25 @@
+/*
+====================================
+  kg-icon-close
+====================================
+*/
+
+.kg-icon-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.kg-icon-close:after {
+  content: '\2715';
+}
+
+.kg-icon-close:hover {
+  color: #000;
+}

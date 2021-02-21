@@ -1,0 +1,1132 @@
+<div class="kg-block-view">
+    <div class="kg-block-view__menu">
+        <div class="kg-block-view__menu-filter">
+            <div class="kg-block-view__menu-filter-container">
+                <div class="flex-box align-items-center justify-cont-between">
+                    <div class="fw-500 fs-14 m-t-5">Фильтры</div>
+                    <span class="kg-icon-close kg-block-view__menu-filter-close"></span>
+                </div>
+                <hr>
+                <div class="form-group form-group-xs">
+                    <select class="kg-select2 form-control">
+                        <option value="" selected>Все обращения</option>
+                        <option value="">Входящие</option>
+                        <option value="">Исходящие</option>
+                    </select>
+                </div>
+                <hr class="hr-dashed">
+                <div class="form-group form-group-xs">
+                    <select class="kg-select2 form-control" data-placeholder="Выберите настройку">
+                        <option></option>
+                        <option value="1">Все</option>
+                        <option value="2">Настройка 1</option>
+                        <option value="3">Настройка 2</option>
+                        <option value="4">Настройка 3</option>
+                    </select>
+                </div>
+                <hr class="hr-dashed">
+                <div class="form-group form-group-xs">
+                    <select class="kg-select2 kg-select2_placeholder-set form-control" data-placeholder="Выберите настройку">
+                        <option></option>
+                        <option class="select2-option-level-1" value="1">Категория 1</option>
+                        <option class="select2-option-level-2" value="2">Подкатегория 1.1</option>
+                        <option class="select2-option-level-2" value="3">Подкатегория 1.2</option>
+                        <option class="select2-option-level-1" value="4">Категория 2</option>
+                        <option class="select2-option-level-2" value="5">Подкатегория 2.1</option>
+                        <option class="select2-option-level-2" value="6">Подкатегория 2.2</option>
+                        <option class="select2-option-level-2" value="7">Подкатегория 2.3</option>
+                    </select>
+                </div>
+                <div class="flex-box align-items-start add-block-list">
+                    <div class="add-block-list__content">
+                        <div class="label-sticker label-sticker_xs add-block">
+                            <div class="label-sticker__name">Подкатегория 1.1</div>
+                            <span class="label-sticker__close label-sticker__close"></span>
+                        </div>
+                        <div class="label-sticker label-sticker_xs add-block">
+                            <div class="label-sticker__name">Категория 2</div>
+                            <span class="label-sticker__close label-sticker__close"></span>
+                        </div>
+                        <div class="label-sticker label-sticker_xs add-block">
+                            <div class="label-sticker__name">Подкатегория 2.3</div>
+                            <span class="label-sticker__close label-sticker__close"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr-dashed">
+                <div class="form-group">
+                    <div class="checkbox checkbox-custom m-b-20">
+                        <label class="flex-box">
+                                                        <span class="checkbox-custom__toggle">
+                                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                                        </span>
+                            <input type="checkbox">
+                            <span class="checkbox-custom__caption fs-11 text-muted">Настройка-1</span>
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-custom m-b-20">
+                        <label class="flex-box">
+                                                        <span class="checkbox-custom__toggle">
+                                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                                        </span>
+                            <input type="checkbox">
+                            <span class="checkbox-custom__caption fs-11 text-muted">Настройка-2</span>
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-custom m-b-20">
+                        <label class="flex-box">
+                                                        <span class="checkbox-custom__toggle">
+                                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                                        </span>
+                            <input type="checkbox">
+                            <span class="checkbox-custom__caption fs-11 text-muted">Настройка-3</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            @@include('_block-search.html')
+            <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                <li role="presentation" class="nav-stacked__item nav-stacked__item_new active" data-toggle="tab" data-target="#dealLawyerNew">
+                    <div class="flex-box justify-cont-between align-items-start">
+                        <div class="nav-stacked__item-name"><span class="glyphicon glyphicon-pencil text-muted fs-12 m-r-10"></span> Новое обращение</div>
+                        <div class="dropdown m-l-10">
+                            <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="img/icon/icon-menu_vertical.png" alt="">
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu_right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="presentation" class="nav-stacked__item" data-toggle="tab" data-target="#dealLawyerView">
+                    <div class="flex-box align-items-start flex-box_second-block_wide p-t-10">
+                        <div class="m-r-20">
+                            <img src="img/icon/icon-check.png" alt="">
+                        </div>
+                        <div>
+                            <div class="flex-box align-items-center">
+                                <div class="nav-stacked__item-name nav-stacked__item-name_cropped" title="Услуга определенная">
+                                    Услуга определенная
+                                </div>
+                            </div>
+                            <div class="thumb-icon thumb-icon_xs">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Алишер
+                                                Усманов
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted">Юрист</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <span class="text-light">21.01.2018</span>
+                                    <div class="text-muted m-t-10 fs-10">Услуга</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li role="presentation" class="nav-stacked__item" data-toggle="tab" data-target="#dealLawyerView">
+                    <div class="flex-box align-items-start flex-box_second-block_wide p-t-10">
+                        <div class="m-r-20">
+                            <img src="img/icon/icon-check.png" alt="">
+                        </div>
+                        <div>
+                            <div class="flex-box align-items-center">
+                                <div class="nav-stacked__item-name nav-stacked__item-name_cropped" title="Услуга определенная">
+                                    Услуга определенная
+                                </div>
+                            </div>
+                            <div class="thumb-icon thumb-icon_xs">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Алишер
+                                                Усманов
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted">Клиент</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <span class="text-light">21.01.2018</span>
+                                    <div class="text-muted m-t-10 fs-10">Услуга</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a href="#" class="flex-box justify-cont-center m-t-30"><u>Заявки на услуги</u></a>
+            <a href="#" class="btn btn-primary-inverse kg-block-view__menu-btn">Заказать услугу</a>
+        </div>
+    </div>
+    <div class="tab-content kg-block-view__content">
+        <div class="tab-pane fade in active" id="dealLawyerNew">
+            <div class="kg-block-view__content-header">
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/icon/icon-deal-white-20x29.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Заказ услуги
+                    </div>
+                </div>
+                <div class="dropdown m-l-20">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu_right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                <div class="kg-panel-group">
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Выберите категорию права
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>Гражданское право</div>
+                                    <div class="m-l-30 m-r-30">
+                                        <img src="img/icon/icon-menu_right-7x13.png" alt="">
+                                    </div>
+                                    <div>Регистрация бизнеса</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="main-search m-b-30">
+                                        <input type="text" class="form-control" placeholder="Поиск по всем запросам...">
+                                        <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-group panel-group_categories-list" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"  href="#collapseDeal_1">
+                                                Гражданское право
+                                                <div class="panel__icon-toggle">
+                                                    <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseDeal_1" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseDeal_2">
+                                                Конституционное право
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseDeal_2" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               href="#collapseDeal_3">
+                                                Защита прав потребителей
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseDeal_3" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               href="#collapseDeal_4">
+                                                Административное право
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseDeal_4" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               href="#collapseDeal_5">
+                                                Автомобильное право
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseDeal_5" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-sm">Показать все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Выберите категорию права
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div class="text-danger">* Необходимо заполнить данный пункт</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <span class="glyphicon glyphicon-alert text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            При нажатии на кнопку "Отправить" таким образом подсветится блок обязательный к заполнению
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Выберите категорию права
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div class="text-light">* Необходимо заполнить данный пункт</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <span class="glyphicon glyphicon-pencil text-light"></span>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            Состояние не заполненного блока, но обязательного к заполнению
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Опишите услугу
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>Как вернуть некачественный товар в интернет-магазин?</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="form-group">
+                                <label>Заголовок услуги</label>
+                                <input type="text" class="form-control" placeholder="Например: «Как вернуть некачественный товар в интернет-магазин?»">
+                            </div>
+                            <div class="form-group">
+                                <label>Описание услуги</label>
+                                <textarea class="form-control" rows="3" placeholder="Чем точнее Вы опишите требования к документу, тем точнее юристы смогут оценить его стоимость."></textarea>
+                            </div>
+
+                            <div class="add-block-list m-b-30">
+                                <div class="add-block-list__content">
+                                    <div class="form-group">
+                                        <label>Ссылка на видео</label>
+                                        <div class="flex-box align-items-start">
+                                            <input type="text" class="form-control" placeholder="Ссылка на видео YouTube">
+                                            <button class="btn btn-add-block" type="button" title="Добавить"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group add-block">
+                                        <div class="flex-box align-items-start">
+                                            <input type="text" class="form-control" placeholder="Ссылка на видео YouTube">
+                                            <button class="btn btn-clear-all no-border action-remove" type="button" title="Удалить"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group add-block">
+                                        <div class="flex-box align-items-start">
+                                            <input type="text" class="form-control" placeholder="Ссылка на видео YouTube">
+                                            <button class="btn btn-clear-all no-border action-remove" type="button" title="Удалить"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Прикрепленные файлы</label>
+                                <div class="kg-block-drop-file kg-drop-area">
+                                    <div class="kg-drop-area__lay">
+                                        <div class="kg-drop-area__container">
+                                            <div class="kg-drop-area__container-body">
+                                                Перетащите сюда файлы для загрузки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kg-block-drop-file__container">
+                                        <div class="kg-block-drop-file__caption">
+                                            <div>Перетащите файлы в выделенную обсласть</div>
+                                            <div>или</div>
+                                        </div>
+                                        <div class="text-center m-t-10">
+                                            <a href="#" class="btn btn-default btn-xs">Выберите файл</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress m-t-20">
+                                    <div class="progress-bar progress-bar-default progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="kg-list-inline m-t-20">
+                                <li class="add-block">
+                                    <div class="file-attachment" title="Регистрация.pdf">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light action-remove" title="Удалить">
+                                                    <span class="kg-file-attachment__remove"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Регистрация</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                                <li class="add-block">
+                                    <div class="file-attachment" title="Регистрация.pdf">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light action-remove" title="Удалить">
+                                                    <span class="kg-file-attachment__remove"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Заявление на отпуск</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="text-right m-t-20">
+                                <a href="#" class="btn btn-primary btn-sm">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Город
+                                </div>
+                                <div class="kg-panel__header-selected justify-cont-between">
+                                    <div>
+                                        Москва
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="form-group">
+                                <select class="kg-select2 form-control" data-placeholder="Укажите город">
+                                    <option></option>
+                                    <option value="1">Москва</option>
+                                    <option value="2">Красноярск</option>
+                                    <option value="3">Новосибирск</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Бюджет
+                                </div>
+                                <div class="kg-panel__header-selected justify-cont-between">
+                                    <div>
+                                        Договорная цена
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="kg-switchable-form-wrap">
+                                <div class="m-b-30">
+                                    <div class="kg-switch kg-switch_form-toggle">
+                                        <div class="kg-switch__onoff">
+                                            <label class="kg-switch__onoff-label">
+                                                <input type="checkbox" name="" class="kg-switch__onoff-checkbox">
+                                                <span class="kg-switch__onoff-inner"></span>
+                                                <span class="kg-switch__onoff-switch"></span>
+                                            </label>
+                                        </div>
+                                        <div class="kg-switch__title">Договорная цена</div>
+                                    </div>
+                                </div>
+                                <fieldset class="kg-switchable-form">
+                                    <div class="form-group">
+                                        <label>Цена, <span>&#8381;</span></label>
+                                        <div class="flex-box align-items-center">
+                                            <input type="text" class="form-control" placeholder="От">
+                                            <span class="m-l-10 m-r-10">—</span>
+                                            <input type="text" class="form-control" placeholder="до">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="text-right m-t-20">
+                                    <a href="#" class="btn btn-primary btn-sm">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Авторизация
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>
+                                        Вам необходимо авторизоваться
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="w-300 center-block">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs kg-nav-tabs m-b-30 fs-15" role="tablist">
+                                    <li role="presentation" class="kg-nav-tabs__item active">
+                                        <a href="#tabRegistrationDeal" class="kg-nav-tabs__btn" aria-controls="home" role="tab" data-toggle="tab">Регистрация</a>
+                                    </li>
+                                    <li role="presentation" class="kg-nav-tabs__item">
+                                        <a href="#tabLoginDeal" class="kg-nav-tabs__btn" aria-controls="profile" role="tab" data-toggle="tab">Вход</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content m-b-20">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tabRegistrationDeal">
+                                        @@include('_form-registration.html')
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tabLoginDeal">
+                                        @@include('_form-login.html')
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Авторизация
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>
+                                        Вы авторизованы как <span class="fw-500">Владимир Владимирович</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="w-300 center-block">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs kg-nav-tabs m-b-30 fs-15" role="tablist">
+                                    <li role="presentation" class="kg-nav-tabs__item">
+                                        <a href="#tabRegistrationDeal2" class="kg-nav-tabs__btn" aria-controls="home" role="tab" data-toggle="tab">Регистрация</a>
+                                    </li>
+                                    <li role="presentation" class="kg-nav-tabs__item active">
+                                        <a href="#tabLoginDeal2" class="kg-nav-tabs__btn" aria-controls="profile" role="tab" data-toggle="tab">Пользователь</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content m-b-20">
+                                    <div role="tabpanel" class="tab-pane fade" id="tabRegistrationDeal2">
+                                        @@include('_form-registration.html')
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tabLoginDeal2">
+                                        <form class="form-login-height form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Имя</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static fw-500">Владимир Владимирович</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Эл. почта</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static fw-500">example@example.dom</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Телефон</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static fw-500">+7 (999) 999-99-99</p>
+                                                </div>
+                                            </div>
+                                            <div class="m-t-20 text-center">
+                                                <a href="#" class="link-underline text-muted"><span class="glyphicon glyphicon-user m-r-10"></span>перейти в профиль пользователя</a>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-block fs-12 m-t-30">Выход</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center m-t-30">
+                    <a href="#" class="btn btn-primary">Отправить</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane height-100-percent fade" id="dealLawyerView">
+            <div class="flex-box flex-dir-col justify-cont-between height-100-percent kg-drop-area">
+                <div class="kg-drop-area__lay">
+                    <div class="kg-drop-area__container">
+                        <div class="kg-drop-area__container-body">
+                            Перетащите сюда файлы для загрузки
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="kg-block-view__content-header">
+                        <div class="thumb-icon">
+                            <a href="#"
+                               class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                <img src="img/avatar-white-29x29.png" alt="">
+                            </a>
+                            <div class="thumb-icon__info">
+                                <div class="thumb-icon__name">
+                                    <a href="" class="text-white">Алишер Усманов</a>
+                                </div>
+                                <div class="thumb-icon__caption">
+                                    <span class="text-light">Юрист / Москва</span>
+                                </div>
+                                <span class="icon-status icon-status_online thumb-icon__icon-status"></span>
+                            </div>
+                        </div>
+                        <div class="flex-box">
+                            <div class="dropdown m-r-30">
+                                <button type="button" class="btn btn-default dropdown-toggle"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    Обратиться к этому юристу <span
+                                        class="glyphicon glyphicon-menu-down m-l-10"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="tools">
+                                <a href="#" class="tools__item">
+                                    <div class="kg-btn-file-load">
+                                        <label>
+                                            <img src="img/icon/icon-staple.png" alt="">
+                                            <input type="file" multiple>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a href="#" class="tools__item">
+                                    <img src="img/icon/icon-spam.png" alt="">
+                                </a>
+                                <a href="#" class="tools__item">
+                                    <img src="img/icon/icon-search.png" alt="">
+                                </a>
+                            </div>
+                            <div class="dropdown m-l-20">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu_right">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                        <div class="kg-panel-group">
+                            <div class="kg-panel">
+                                <div class="kg-panel__header">
+                                    <div class="kg-panel__header-body">
+                                        <div class="flex-box align-items-start">
+                                            <img class="m-r-20" src="img/icon/icon-deal-black-20x29.png" alt="" title="Тип обращения - Услуга">
+                                            <div>
+                                                <div class="fs-14 fw-500">
+                                                    Услуга определенная
+                                                </div>
+                                                <div class="kg-panel__header-selected">
+                                                    <div>Категория</div>
+                                                    <div class="m-l-30 m-r-30">
+                                                        <img src="img/icon/icon-menu_right-7x13.png" alt="">
+                                                    </div>
+                                                    <div>Подкатегория</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="kg-panel__header-aside">
+                                        <span class="kg-panel__header-more-info m-r-10">Подробнее</span>
+                                        <span href="#" class="kg-panel__header-less-info m-r-10">Скрыть</span>
+                                        <div class="kg-panel__header-toggle">
+                                            <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="kg-panel__body p-30">
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Тип обращения:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static fw-500">Услуга</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">ФИО клиента:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static fw-500">Владимиров Владимир Владимирович</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Город клиента:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static fw-500">Томск</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Статус обращения:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static"><img src="img/icon/icon-check.png" class="m-r-10" alt=""> - <span class="m-l-10">наименование статуса</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Город юриста:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static fw-500">Москва, Новосибирск</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Категория права:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static fw-500">Гражданское право / Регистрация бизнеса</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Заголовок услуги:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static fw-500">Услуга определенная</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Описание услуги:</label>
+                                            <div class="col-sm-9">
+                                                <p class="form-control-static">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Прикрепленные файлы:</label>
+                                            <div class="col-sm-9">
+                                                <ul class="kg-list-inline">
+                                                    <li>
+                                                        <div class="file-attachment" title="Регистрация.pdf">
+                                                            <div class="flex-box">
+                                                                <a href="#" class="file-attachment__preview">
+                                                                    <img src="img/icon/icon-folder-grey.png" alt="">
+                                                                </a>
+                                                                <div class="file-attachment__tools">
+                                                                    <a href="#" class="text-light" title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="file-attachment__name">
+                                                                <span class="file-attachment__name-filename">Регистрация</span>
+                                                                <span class="file-attachment__name-filetype">.pdf</span>
+                                                            </a>
+                                                            <div class="file-attachment__caption">280 КБ</div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="file-attachment" title="Регистрация.pdf">
+                                                            <div class="flex-box">
+                                                                <a href="#" class="file-attachment__preview">
+                                                                    <img src="img/icon/icon-folder-grey.png" alt="">
+                                                                </a>
+                                                                <div class="file-attachment__tools">
+                                                                    <a href="#" class="text-light" title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="file-attachment__name">
+                                                                <span class="file-attachment__name-filename">Регистрация</span>
+                                                                <span class="file-attachment__name-filetype">.pdf</span>
+                                                            </a>
+                                                            <div class="file-attachment__caption">280 КБ</div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="file-attachment" title="Регистрация.pdf">
+                                                            <div class="flex-box">
+                                                                <a href="#" class="file-attachment__preview">
+                                                                    <img src="img/icon/icon-folder-grey.png" alt="">
+                                                                </a>
+                                                                <div class="file-attachment__tools">
+                                                                    <a href="#" class="text-light" title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="file-attachment__name">
+                                                                <span class="file-attachment__name-filename">Регистрация</span>
+                                                                <span class="file-attachment__name-filetype">.pdf</span>
+                                                            </a>
+                                                            <div class="file-attachment__caption">280 КБ</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Видео:</label>
+                                            <div class="col-sm-9">
+                                                <ul class="kg-list-inline">
+                                                    <li>
+                                                        <div class="kg-video">
+                                                            <div class="kg-video-container">
+                                                                <div class="kg-video-container__play">
+                                                                    <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kg-video">
+                                                            <div class="kg-video-container">
+                                                                <div class="kg-video-container__play">
+                                                                    <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kg-video">
+                                                            <div class="kg-video-container">
+                                                                <div class="kg-video-container__play">
+                                                                    <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="#" class="kg-panel__body-toggle">Скрыть описание <span class="glyphicon glyphicon-triangle-top m-l-10"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="chat-box">
+                            <div class="chat-box__body">
+                                <div class="chat-box__date text-light">Воскресенье, 16 сентября 2018</div>
+                                <div class="chat-box__msg-list">
+                                    <div class="chat-box__msg chat-box__msg_in">
+                                        <div class="chat-box__msg-content">
+                                            <span class="chat-box__msg-angle"></span>
+                                            <div>
+                                                <div class="chat-box__msg-body">
+                                                    <span class="chat-box__msg-text">Привет, мой друг!</span>
+                                                </div>
+                                                <div class="chat-box__msg-footer">
+                                                    <a href="#" class="text-muted m-r-20">Ответить</a>
+                                                    <a href="#" class="text-muted">Переслать</a>
+                                                </div>
+                                            </div>
+                                            <div class="chat-box__msg-info">17:10</div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-box__msg chat-box__msg_in">
+                                        <div class="chat-box__msg-content">
+                                            <span class="chat-box__msg-angle"></span>
+                                            <div>
+                                                <div class="chat-box__msg-body">
+                                                    <span class="chat-box__msg-text">Как поживаешь?</span>
+                                                </div>
+                                                <div class="chat-box__msg-footer">
+                                                    <a href="#" class="text-muted m-r-20">Ответить</a>
+                                                    <a href="#" class="text-muted">Переслать</a>
+                                                </div>
+                                            </div>
+                                            <div class="chat-box__msg-info">17:10</div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-box__msg chat-box__msg_out">
+                                        <div class="chat-box__msg-content">
+                                            <span class="chat-box__msg-angle"></span>
+                                            <div>
+                                                <div class="chat-box__msg-body">
+                                                    <span class="chat-box__msg-text">Все отлично!</span>
+                                                </div>
+                                                <div class="chat-box__msg-footer">
+                                                    <a href="#" class="text-muted m-r-20">Ответить</a>
+                                                    <a href="#" class="text-muted">Переслать</a>
+                                                </div>
+                                            </div>
+                                            <div class="chat-box__msg-info">17:10</div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-box__msg chat-box__msg_out">
+                                        <div class="chat-box__msg-content">
+                                            <span class="chat-box__msg-angle"></span>
+                                            <div>
+                                                <div class="chat-box__msg-body">
+                                                    <ul class="kg-list-inline">
+                                                        <li>
+                                                            <div class="file-attachment" title="Регистрация.pdf">
+                                                                <div class="flex-box">
+                                                                    <a href="#" class="file-attachment__preview">
+                                                                        <img src="img/icon/icon-folder-grey.png" alt="">
+                                                                    </a>
+                                                                    <div class="file-attachment__tools">
+                                                                        <a href="#" class="text-light" title="Скачать">
+                                                                            <span class="glyphicon glyphicon-download-alt"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="file-attachment__name">
+                                                                    <span class="file-attachment__name-filename">Регистрация</span>
+                                                                    <span class="file-attachment__name-filetype">.pdf</span>
+                                                                </a>
+                                                                <div class="file-attachment__caption">280 КБ</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="file-attachment" title="Регистрация.pdf">
+                                                                <div class="flex-box">
+                                                                    <a href="#" class="file-attachment__preview">
+                                                                        <img src="img/icon/icon-folder-grey.png" alt="">
+                                                                    </a>
+                                                                    <div class="file-attachment__tools">
+                                                                        <a href="#" class="text-light" title="Скачать">
+                                                                            <span class="glyphicon glyphicon-download-alt"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="file-attachment__name">
+                                                                    <span class="file-attachment__name-filename">Регистрация</span>
+                                                                    <span class="file-attachment__name-filetype">.pdf</span>
+                                                                </a>
+                                                                <div class="file-attachment__caption">280 КБ</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="file-attachment" title="Регистрация.pdf">
+                                                                <div class="flex-box">
+                                                                    <a href="#" class="file-attachment__preview">
+                                                                        <img src="img/icon/icon-folder-grey.png" alt="">
+                                                                    </a>
+                                                                    <div class="file-attachment__tools">
+                                                                        <a href="#" class="text-light" title="Скачать">
+                                                                            <span class="glyphicon glyphicon-download-alt"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="file-attachment__name">
+                                                                    <span class="file-attachment__name-filename">Регистрация</span>
+                                                                    <span class="file-attachment__name-filetype">.pdf</span>
+                                                                </a>
+                                                                <div class="file-attachment__caption">280 КБ</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="chat-box__msg-text">Вот необходимые документы.</span>
+                                                </div>
+                                                <div class="chat-box__msg-footer">
+                                                    <a href="#" class="text-muted m-r-20">Ответить</a>
+                                                    <a href="#" class="text-muted">Переслать</a>
+                                                </div>
+                                            </div>
+                                            <div class="chat-box__msg-info">17:10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-box__date text-light">Понедельник, 17 сентября 2018</div>
+                                <div class="chat-box__msg-list">
+                                    <div class="chat-box__msg chat-box__msg_in">
+                                        <div class="chat-box__msg-content">
+                                            <span class="chat-box__msg-angle"></span>
+                                            <div>
+                                                <div class="chat-box__msg-body">
+                                                    <span class="chat-box__msg-text">Привет, мой друг!</span>
+                                                </div>
+                                                <div class="chat-box__msg-footer">
+                                                    <a href="#" class="text-muted m-r-20">Ответить</a>
+                                                    <a href="#" class="text-muted">Переслать</a>
+                                                </div>
+                                            </div>
+                                            <div class="chat-box__msg-info">17:10</div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-box__msg chat-box__msg_out">
+                                        <div class="chat-box__msg-content">
+                                            <span class="chat-box__msg-angle"></span>
+                                            <div>
+                                                <div class="chat-box__msg-body">
+                                                    <span class="chat-box__msg-text">Все отлично!</span>
+                                                </div>
+                                                <div class="chat-box__msg-footer">
+                                                    <a href="#" class="text-muted m-r-20">Ответить</a>
+                                                    <a href="#" class="text-muted">Переслать</a>
+                                                </div>
+                                            </div>
+                                            <div class="chat-box__msg-info">17:10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kg-block-view__content-footer">
+                    <div class="kg-sending-block">
+                        <textarea class="form-control" rows="1" placeholder="Введите сообщение ..."></textarea>
+                        <div class="flex-box align-items-center">
+                            <div class="kg-btn-file-load m-l-20">
+                                <label>
+                                    <img src="img/icon/icon-staple-20x22.png" alt="">
+                                    <input type="file" multiple="">
+                                </label>
+                            </div>
+                            <button class="btn btn-primary fs-12 m-l-20">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

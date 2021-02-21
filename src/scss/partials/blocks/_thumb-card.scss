@@ -1,0 +1,62 @@
+/*
+====================================
+  thumb-card
+====================================
+*/
+
+.thumb-card__setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: #000;
+  border: 1px solid #ff662e;
+  box-shadow: 0 0 5px 0 #ff662e;
+  z-index: 5;
+  position: relative;
+}
+
+.thumb-card__setting-btn {
+  font-size: 11px;
+  color: #c9c9c9;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.thumb-card__setting-btn:hover {
+  color: #fff;
+  transition: .2s ease-in;
+}
+
+.thumb-card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 103px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.thumb-card__name {
+  margin-top: 5px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.thumb-card__name_xs {
+  font-size: 10px;
+}
+
+.thumb-card_sm {
+  width: 167px;
+}
+
+.card-list {
+  .thumb-card {
+    margin-bottom: 15px;
+  }
+}

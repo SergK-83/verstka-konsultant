@@ -1,0 +1,41 @@
+/*
+====================================
+  input-datepicker
+====================================
+*/
+
+.input-datepicker {
+  display: inline-block;
+  position: relative;
+  width: 92px;
+}
+
+.input-datepicker .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 14px 0 1px 25px;
+  font-size: 12px;
+}
+
+.input-datepicker__icon {
+  position: absolute;
+  left: 3px;
+  bottom: 4px;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+  border-radius: 2px;
+}
+
+.datepicker tfoot tr th, .datepicker thead tr:first-child th {
+  color: $orange;
+}
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:focus {
+  color: #fff;
+  background-color: $orange;
+  border-color: $orange;
+}

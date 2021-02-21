@@ -1,0 +1,161 @@
+/*
+====================================
+  kg-desktop
+====================================
+*/
+
+.kg-desktop {
+  display: flex;
+  overflow: hidden;
+}
+
+.kg-desktop__menu {
+  position: relative;
+  z-index: 5;
+  background-color: #eee;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  width: 60px;
+  overflow: hidden;
+}
+
+.kg-desktop__content {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 60px);
+}
+
+.kg-desktop__content >.tab-pane {
+  height: 100%;
+}
+
+.kg-desktop__content .kg-block-view {
+  height: 100%;
+}
+
+.kg-desktop__menu-btn-login {
+  margin: 12px 0 10px;
+  padding: 2px 8px 4px;
+  line-height: 1;
+  font-size: 12px;
+  border-width: 1px;
+}
+
+.kg-desktop__menu-avatar {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.kg-desktop__menu-avatar > a {
+  display: block;
+}
+
+.kg-desktop__menu-avatar:hover {
+  opacity: .7;
+}
+
+.kg-desktop__menu-avatar-img {
+  width: 46px;
+}
+
+.kg-desktop__menu-avatar-caption {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 3px 2px 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.kg-desktop__tab-item > a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.kg-desktop__tab-icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat top center;
+}
+
+.kg-desktop__tab-notice {
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: -4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #e77776;
+}
+
+.kg-desktop__tab-item.active .kg-desktop__tab-icon, .kg-desktop__tab-item > a:hover .kg-desktop__tab-icon {
+  background-position: bottom center;
+}
+
+.kg-desktop__tab-item_disabled, .kg-desktop__tab-item_disabled:hover {
+  opacity: .5;
+
+  a {
+    cursor: not-allowed;
+  }
+
+  .kg-desktop__tab-icon {
+    background-position: top center !important;
+  }
+}
+
+.kg-desktop__tab-icon_notice {
+  background-image: url("../img/icon/icon-notice.png");
+}
+
+.kg-desktop__tab-icon_dialog {
+  background-image: url("../img/icon/icon-dialog.png");
+}
+
+.kg-desktop__tab-icon_question {
+  background-image: url("../img/icon/icon-question.png");
+}
+
+.kg-desktop__tab-icon_docs {
+  background-image: url("../img/icon/icon-docs.png");
+}
+
+.kg-desktop__tab-icon_phone {
+  background-image: url("../img/icon/icon-phone.png");
+}
+
+.kg-desktop__tab-icon_organ {
+  background-image: url("../img/icon/icon-organ.png");
+}
+
+.kg-desktop__tab-icon_deal {
+  background-image: url("../img/icon/icon-deal.png");
+}
+
+.kg-desktop__tab-icon_meet {
+  background-image: url("../img/icon/icon-meet.png");
+}
+
+.kg-desktop__tab-icon_money {
+  background-image: url("../img/icon/icon-money.png");
+}
+
+.kg-desktop__tab-icon_job {
+  background-image: url("../img/icon/icon-bag.png");
+}
+
+.kg-desktop__tab-icon_evolution {
+  background-image: url("../img/icon/icon-lightbulb.png");
+}
+
+.kg-desktop__tab-icon_favorites {
+  background-image: url("../img/icon/icon-favorites.png");
+}
+
+.kg-desktop__tab-icon_setting {
+  background-image: url("../img/icon/icon-setting.png");
+}

@@ -1,0 +1,21 @@
+/*
+====================================
+  kg-list-inline
+====================================
+*/
+
+.kg-list-inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kg-list-inline > li {
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.kg-list-inline.justify-cont-between {
+  li {
+    margin-right: 0;
+  }
+}

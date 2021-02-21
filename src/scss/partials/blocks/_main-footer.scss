@@ -1,0 +1,65 @@
+/*
+====================================
+  main footer
+====================================
+*/
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #19212d;
+  padding: 40px 0 20px;
+}
+
+.main-footer__aside {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__soc-net {
+  margin: 30px 0 40px;
+
+  .soc-net__item {
+    width: 23px;
+    height: 23px;
+    margin: 6px;
+  }
+
+  .soc-net__item_twitter {
+    background-position: center -23px;
+  }
+
+  .soc-net__item_vk {
+    background-position: center -46px;
+  }
+
+  .soc-net__item_youtube {
+    background-position: center -69px;
+  }
+
+  .soc-net__item_inst {
+    background-position: center -92px;
+  }
+}
+
+.main-footer__menu {
+  color: #acacac;
+
+  .nav-stacked > li > a {
+    padding-left: 0;
+    color: #acacac;
+    font-size: 12px;
+  }
+
+  .nav-stacked > li > a:hover {
+    color: #fff;
+  }
+}
+
+.main-footer__menu-header {
+  font-size: 13px;
+  text-transform: uppercase;
+}

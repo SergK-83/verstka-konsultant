@@ -1,0 +1,26 @@
+/*
+====================================
+  kg-lawyer-price
+====================================
+*/
+
+.kg-lawyer-price {
+  .textarea-autosize {
+    resize: none;
+  }
+
+  .kg-sort-list__item-name input {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  .btn-clear-all {
+    margin-left: 15px;
+  }
+}
+
+.kg-lawyer-price__create-price {
+  display: none;
+}

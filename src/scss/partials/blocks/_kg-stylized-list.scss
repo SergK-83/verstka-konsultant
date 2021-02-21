@@ -1,0 +1,23 @@
+/*
+====================================
+  kg-stylized-list
+====================================
+*/
+
+.kg-stylized-list > li {
+  position: relative;
+  padding-left: 20px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #bfbfbf;
+  }
+}

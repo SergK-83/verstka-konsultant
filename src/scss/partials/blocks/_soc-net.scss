@@ -1,0 +1,38 @@
+/*
+====================================
+  soc-net
+====================================
+*/
+
+.soc-net {
+  display: inline-flex;
+}
+
+.soc-net__item {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  margin: 10px;
+  background: url("../img/icon/sprite-soc-net-grey-x50.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.soc-net__item_fb {
+  background-position: center 0;
+}
+
+.soc-net__item_twitter {
+  background-position: center -29px;
+}
+
+.soc-net__item_vk {
+  background-position: center -58px;
+}
+
+.soc-net__item_youtube {
+  background-position: center -87px;
+}
+
+.soc-net__item_inst {
+  background-position: center -116px;
+}

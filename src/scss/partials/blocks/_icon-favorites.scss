@@ -1,0 +1,21 @@
+/*
+====================================
+  icon-favorites
+====================================
+*/
+
+.icon-favorites {
+  display: inline-block;
+  color: #c3c2c2;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon/icon-favorites.png") no-repeat top center;
+}
+
+.icon-favorites_toggle {
+  cursor: pointer;
+}
+
+.icon-favorites_active {
+  background-position: bottom center;
+}

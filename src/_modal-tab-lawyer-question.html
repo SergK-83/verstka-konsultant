@@ -1,0 +1,1414 @@
+<div class="kg-block-view">
+    <div class="kg-block-view__menu">
+        <div class="kg-block-view__menu-filter">
+            <div class="kg-block-view__menu-filter-container">
+                <div class="flex-box align-items-center justify-cont-between">
+                    <div class="fw-500 fs-14 m-t-5">Фильтры</div>
+                    <span class="kg-icon-close kg-block-view__menu-filter-close"></span>
+                </div>
+                <hr>
+                <div class="form-group form-group-xs">
+                    <select class="kg-select2 form-control">
+                        <option value="" selected>Все обращения</option>
+                        <option value="">Входящие</option>
+                        <option value="">Исходящие</option>
+                    </select>
+                </div>
+                <hr class="hr-dashed">
+                <div class="form-group form-group-xs">
+                    <select class="kg-select2 form-control" data-placeholder="Выберите тариф">
+                        <option></option>
+                        <option value="1">Все</option>
+                        <option value="2">Тариф 1</option>
+                        <option value="3">Тариф 2</option>
+                        <option value="4">Тариф 3</option>
+                    </select>
+                </div>
+                <hr class="hr-dashed">
+                <div class="form-group form-group-xs">
+                    <select class="kg-select2 kg-select2_placeholder-set form-control" data-placeholder="Выберите категории">
+                        <option></option>
+                        <option class="select2-option-level-1" value="1">Категория права</option>
+                        <option class="select2-option-level-2" value="2">Гражданское право</option>
+                        <option class="select2-option-level-2" value="3">Другое право</option>
+                        <option class="select2-option-level-2" value="4">Иное право</option>
+                        <option class="select2-option-level-1" value="5">Категория права-2</option>
+                        <option class="select2-option-level-2" value="6">Подкатегория-1</option>
+                        <option class="select2-option-level-2" value="7">Подкатегория-2</option>
+                    </select>
+                </div>
+                <div class="flex-box align-items-start add-block-list">
+                    <div class="add-block-list__content">
+                        <div class="label-sticker label-sticker_xs add-block">
+                            <div class="label-sticker__name">Гражданское право</div>
+                            <span class="label-sticker__close label-sticker__close"></span>
+                        </div>
+                        <div class="label-sticker label-sticker_xs add-block">
+                            <div class="label-sticker__name">Другое право</div>
+                            <span class="label-sticker__close label-sticker__close"></span>
+                        </div>
+                        <div class="label-sticker label-sticker_xs add-block">
+                            <div class="label-sticker__name">Категория права</div>
+                            <span class="label-sticker__close label-sticker__close"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            @@include('_block-search.html')
+            <div class="kg-categories">
+                <div class="kg-category-item kg-category-item_new" data-toggle="tab" data-target="#questionLawyerNew">
+                    <div class="flex-box justify-cont-between align-items-start">
+                        <span class="glyphicon glyphicon-pencil text-muted fs-12 m-r-10"></span>
+                        <div class="kg-category-item__name" title="Новый вопрос">
+                            Новый вопрос
+                        </div>
+                    </div>
+                    <div class="dropdown kg-category__dropdown">
+                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                             data-toggle="dropdown">
+                            <img src="img/icon/icon-menu_vertical.png" alt="">
+                        </div>
+                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="kg-category-item kg-category-item_has-list kg-category-item_active active" data-toggle="tab"
+                     data-target="#questionLawyerCategory">
+                    <div class="flex-box align-items-start">
+                        <div class="kg-category-item__toggle">
+                            <img src="img/icon/icon-menu_down.png" alt="">
+                        </div>
+                        <div>
+                            <div class="kg-category-item__name" title="Заплатил взятку">
+                                Заплатил взятку
+                            </div>
+                            <div class="kd-category-item__caption">
+                                <img src="img/icon/icon-arrow-left.png" class="m-r-5" alt="" title="Входящее обращение">
+                                <span class="text-light">21.01.2018</span>
+                            </div>
+                        </div>
+                        <div class="m-l-20">
+                            <img src="img/icon/icon-check.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dropdown kg-category__dropdown">
+                        <div class="kg-category__dropdown-toggle"
+                             data-toggle="dropdown">
+                            <img src="img/icon/icon-menu_vertical.png" alt="">
+                        </div>
+                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kg-category-list" style="display: block">
+                    <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                        <li role="presentation" class="nav-stacked__item" data-toggle="tab"
+                            data-target="#questionLawyerCategoryItem">
+                            <div class="thumb-icon">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Владимир
+                                                Владимирович
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted m-r-20">Клиент</span>
+                                            <span class="text-light">21.01.2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-l-20">
+                                        <img src="img/icon/icon-check.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <div class="dropdown kg-category__dropdown">
+                                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                                             data-toggle="dropdown">
+                                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                        </div>
+                                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="kg-category-item kg-category-item_has-list"
+                     data-toggle="tab" data-target="#questionLawyerCategory">
+                    <div class="flex-box align-items-start">
+                        <div class="kg-category-item__toggle">
+                            <img src="img/icon/icon-menu_down.png" alt="">
+                        </div>
+                        <div>
+                            <div class="kg-category-item__name" title="Заплатил взятку">
+                                Заплатил взятку
+                            </div>
+                            <div class="kd-category-item__caption">
+                                <span class="kg-category__notice" title="Новые уведомления"></span>
+                                <img src="img/icon/icon-arrow-right.png" class="m-r-5" alt="" title="Исходящее обращение">
+                                <span class="text-light">21.01.2018</span>
+                            </div>
+                        </div>
+                        <div class="m-l-20">
+                            <img src="img/icon/icon-check.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dropdown kg-category__dropdown">
+                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                             data-toggle="dropdown">
+                            <img src="img/icon/icon-menu_vertical.png" alt="">
+                        </div>
+                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kg-category-list">
+                    <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                        <li role="presentation" class="nav-stacked__item" data-toggle="tab"
+                            data-target="#questionLawyerCategoryItem">
+                            <div class="thumb-icon">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Владимир
+                                                Владимирович
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="kg-category__notice" title="Новые уведомления"></span>
+                                            <span class="text-muted m-r-20">Юрист</span>
+                                            <span class="text-light">21.01.2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-l-20">
+                                        <img src="img/icon/icon-check.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <div class="dropdown kg-category__dropdown">
+                                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                                             data-toggle="dropdown">
+                                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                        </div>
+                                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li role="presentation" class="nav-stacked__item" data-toggle="tab"
+                            data-target="#questionLawyerCategoryItem">
+                            <div class="thumb-icon">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Владимир
+                                                Владимирович
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted m-r-20">Юрист</span>
+                                            <span class="text-light">21.01.2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-l-20">
+                                        <img src="img/icon/icon-check.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <div class="dropdown kg-category__dropdown">
+                                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                                             data-toggle="dropdown">
+                                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                        </div>
+                                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li role="presentation" class="nav-stacked__item" data-toggle="tab"
+                            data-target="#questionLawyerCategoryItem">
+                            <div class="thumb-icon">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Владимир
+                                                Владимирович
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted m-r-20">Юрист</span>
+                                            <span class="text-light">21.01.2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-l-20">
+                                        <img src="img/icon/icon-check.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <div class="dropdown kg-category__dropdown">
+                                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                                             data-toggle="dropdown">
+                                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                        </div>
+                                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="kg-category-list__link-show">Показать ещё...</a>
+                </div>
+
+                <div class="kg-category-item kg-category-item_has-list" data-toggle="tab"
+                     data-target="#questionLawyerCategory">
+                    <div class="flex-box align-items-start">
+                        <div class="kg-category-item__toggle">
+                            <img src="img/icon/icon-menu_down.png" alt="">
+                        </div>
+                        <div>
+                            <div class="kg-category-item__name" title="Заплатил взятку">
+                                Заплатил взятку
+                            </div>
+                            <div class="kd-category-item__caption">
+                                <img src="img/icon/icon-arrow-left.png" class="m-r-5" alt="" title="Входящее обращение">
+                                <span class="text-light">21.01.2018</span>
+                            </div>
+                        </div>
+                        <div class="m-l-20">
+                            <img src="img/icon/icon-check.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dropdown kg-category__dropdown">
+                        <div class="kg-category__dropdown-toggle"
+                             data-toggle="dropdown">
+                            <img src="img/icon/icon-menu_vertical.png" alt="">
+                        </div>
+                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kg-category-list">
+                    <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                        <li role="presentation" class="nav-stacked__item" data-toggle="tab"
+                            data-target="#questionLawyerCategoryItem">
+                            <div class="thumb-icon">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Владимир
+                                                Владимирович
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted m-r-20">Клиент</span>
+                                            <span class="text-light">21.01.2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-l-20">
+                                        <img src="img/icon/icon-check.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <div class="dropdown kg-category__dropdown">
+                                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                                             data-toggle="dropdown">
+                                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                        </div>
+                                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="kg-category-item kg-category-item_has-list" data-toggle="tab"
+                     data-target="#questionLawyerCategory">
+                    <div class="flex-box align-items-start">
+                        <div class="kg-category-item__toggle">
+                            <img src="img/icon/icon-menu_down.png" alt="">
+                        </div>
+                        <div>
+                            <div class="kg-category-item__name" title="Заплатил взятку">
+                                Заплатил взятку
+                            </div>
+                            <div class="kd-category-item__caption">
+                                <img src="img/icon/icon-arrow-left.png" class="m-r-5" alt="" title="Входящее обращение">
+                                <span class="text-light">21.01.2018</span>
+                            </div>
+                        </div>
+                        <div class="m-l-20">
+                            <img src="img/icon/icon-check.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dropdown kg-category__dropdown">
+                        <div class="kg-category__dropdown-toggle"
+                             data-toggle="dropdown">
+                            <img src="img/icon/icon-menu_vertical.png" alt="">
+                        </div>
+                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kg-category-list">
+                    <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                        <li role="presentation" class="nav-stacked__item" data-toggle="tab"
+                            data-target="#questionLawyerCategoryItem">
+                            <div class="thumb-icon">
+                                <div class="flex-box align-items-start">
+                                    <div class="thumb-icon__img thumb-icon__img_avatar">
+                                        <img src="img/avatar.png" alt="">
+                                    </div>
+                                    <div class="thumb-icon__info">
+                                        <div class="thumb-icon__name">
+                                            <div class="thumb-icon__name-link">Владимир
+                                                Владимирович
+                                            </div>
+                                        </div>
+                                        <div class="thumb-icon__caption">
+                                            <span class="text-muted m-r-20">Клиент</span>
+                                            <span class="text-light">21.01.2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-l-20">
+                                        <img src="img/icon/icon-check.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="thumb-icon__side">
+                                    <div class="dropdown kg-category__dropdown">
+                                        <div class="dropdown-toggle kg-category__dropdown-toggle"
+                                             data-toggle="dropdown">
+                                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                        </div>
+                                        <ul class="dropdown-menu kg-category__dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="flex-box justify-cont-center m-t-30"><u>Новые вопросы</u></a>
+            <a href="#" class="btn btn-primary-inverse kg-block-view__menu-btn">Задать вопрос</a>
+        </div>
+    </div>
+    <div class="tab-content kg-block-view__content">
+        <div class="tab-pane fade" id="questionLawyerNew">
+            <div class="kg-block-view__content-header">
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/icon/icon-question-white-26x28.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Новый вопрос
+                    </div>
+                </div>
+                <div class="dropdown m-l-20">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu_right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                <div class="kg-panel-group">
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Выберите категорию права
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>Гражданское право</div>
+                                    <div class="m-l-30 m-r-30">
+                                        <img src="img/icon/icon-menu_right-7x13.png" alt="">
+                                    </div>
+                                    <div>Регистрация бизнеса</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="main-search m-b-30">
+                                        <input type="text" class="form-control" placeholder="Поиск по всем запросам...">
+                                        <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-group panel-group_categories-list" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"  href="#collapse_1">
+                                                Гражданское право
+                                                <div class="panel__icon-toggle">
+                                                    <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_1" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_2">
+                                                Конституционное право
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_2" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               href="#collapse_3">
+                                                Защита прав потребителей
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_3" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               href="#collapse_4">
+                                                Административное право
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_4" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               href="#collapse_5">
+                                                Автомобильное право
+                                                <span class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_5" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Регистрация бизнеса</a></li>
+                                                <li><a href="#">Договорное право</a></li>
+                                                <li><a href="#">Право собственности</a></li>
+                                                <li><a href="#">Взыскание задолженности</a></li>
+                                                <li><a href="#">Кредитование</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-sm">Показать все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Выберите категорию права
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div class="text-danger">* Необходимо заполнить данный пункт</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <span class="glyphicon glyphicon-alert text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            При нажатии на кнопку "Отправить" таким образом подсветится блок обязательный к заполнению для создания вопроса.
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Выберите категорию права
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div class="text-light">* Необходимо заполнить данный пункт</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <span class="glyphicon glyphicon-pencil text-light"></span>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            Состояние не заполненного блока, но обязательного к заполнению
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Опишите вашу проблему
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>Как вернуть некачественный товар в интернет-магазин?</div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="form-group">
+                                <label>Заголовок проблемы</label>
+                                <input type="text" class="form-control" placeholder="Например: «Как вернуть некачественный товар в интернет-магазин?»">
+                            </div>
+                            <div class="form-group">
+                                <label>Описание проблемы</label>
+                                <textarea class="form-control" rows="3" placeholder="Чем точнее Вы опишите требования к документу, тем точнее юристы смогут оценить его стоимость."></textarea>
+                            </div>
+
+                            <div class="add-block-list m-b-30">
+                                <div class="add-block-list__content">
+                                    <div class="form-group">
+                                        <label>Ссылка на видео</label>
+                                        <div class="flex-box align-items-start">
+                                            <input type="text" class="form-control" placeholder="Ссылка на видео YouTube">
+                                            <button class="btn btn-add-block" type="button" title="Добавить"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group add-block">
+                                        <div class="flex-box align-items-start">
+                                            <input type="text" class="form-control" placeholder="Ссылка на видео YouTube">
+                                            <button class="btn btn-clear-all no-border action-remove" type="button" title="Удалить"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group add-block">
+                                        <div class="flex-box align-items-start">
+                                            <input type="text" class="form-control" placeholder="Ссылка на видео YouTube">
+                                            <button class="btn btn-clear-all no-border action-remove" type="button" title="Удалить"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Прикрепленные файлы</label>
+                                <div class="kg-block-drop-file kg-drop-area">
+                                    <div class="kg-drop-area__lay">
+                                        <div class="kg-drop-area__container">
+                                            <div class="kg-drop-area__container-body">
+                                                Перетащите сюда файлы для загрузки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kg-block-drop-file__container">
+                                        <div class="kg-block-drop-file__caption">
+                                            <div>Перетащите файлы в выделенную обсласть</div>
+                                            <div>или</div>
+                                        </div>
+                                        <div class="text-center m-t-10">
+                                            <a href="#" class="btn btn-default btn-xs">Выберите файл</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress m-t-20">
+                                    <div class="progress-bar progress-bar-default progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="kg-list-inline m-t-20">
+                                <li class="add-block">
+                                    <div class="file-attachment" title="Регистрация.pdf">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light action-remove" title="Удалить">
+                                                    <span class="kg-file-attachment__remove"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Регистрация</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                                <li class="add-block">
+                                    <div class="file-attachment" title="Регистрация.pdf">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light action-remove" title="Удалить">
+                                                    <span class="kg-file-attachment__remove"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Заявление на отпуск</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="text-right m-t-20">
+                                <a href="#" class="btn btn-primary btn-sm">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Расчет стоимоти
+                                </div>
+                                <div class="kg-panel__header-selected justify-cont-between">
+                                    <div>
+                                        Вы выбрали тариф <span class="text-uppercase fw-500">Краткий</span>
+                                    </div>
+                                    <div class="fs-14">
+                                        Итого: 499 <span>&#8381;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kg-panel__header-aside">
+                                <img src="img/icon/icon-ok-green-17x11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+
+                            <h5>Выберите тариф</h5>
+                            <div class="flex-box justify-cont-center">
+                                <div class="thumb-icon thumb-icon_vertical thumb-icon_tariff  animation-scale-hover">
+                                    <div>
+                                        <div class="thumb-icon__img">
+                                            <img src="img/kg-shield-68x82.png" alt="">
+                                        </div>
+                                        <div class="thumb-icon__info">
+                                            <div class="thumb-icon__name">
+                                                Бесплатный
+                                            </div>
+                                            <div class="thumb-icon__caption">
+                                                Без гарантии <br> ответа
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-uppercase fs-11 text-primary m-t-20">
+                                        <b>Бесплатно</b>
+                                    </div>
+                                </div>
+                                <div class="thumb-icon thumb-icon_vertical thumb-icon_tariff thumb-icon_tariff-active animation-scale-hover">
+                                    <div>
+                                        <div class="thumb-icon__img">
+                                            <img src="img/kg-shield2-68x82.png" alt="">
+                                        </div>
+                                        <div class="thumb-icon__info">
+                                            <div class="thumb-icon__name">
+                                                Краткий
+                                            </div>
+                                            <div class="thumb-icon__caption">
+                                                С гарантией ответа, <br>
+                                                без возможности <br>
+                                                добавления документов
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-uppercase fs-10 text-primary m-t-20">
+                                        <b class="fs-14">99 <span>&#8381;</span></b>
+                                    </div>
+                                </div>
+                                <div class="thumb-icon thumb-icon_vertical thumb-icon_tariff animation-scale-hover">
+                                    <div>
+                                        <div class="thumb-icon__img">
+                                            <img src="img/kg-shield3-68x82.png" alt="">
+                                        </div>
+                                        <div class="thumb-icon__info">
+                                            <div class="thumb-icon__name">
+                                                Полный
+                                            </div>
+                                            <div class="thumb-icon__caption">
+                                                С гарантией ответа, <br>
+                                                с возможностью <br>
+                                                добавления документа
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-uppercase fs-10 text-primary m-t-20">
+                                        <b class="fs-14">299 <span>&#8381;</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-t-30 text-center">
+                                <img src="img/logo_14x17.png" alt="">
+                                <span class="m-l-10 fs-14">Вы выбрали тариф <span class="m-l-10 text-muted text-uppercase fw-500">Краткий</span></span>
+                            </div>
+                            <hr>
+
+                            <h5>Выберите количество юристов</h5>
+                            <div class="form-group">
+                                <div class="flex-box align-items-center">
+                                    <label class="m-r-10 m-b-0">Количество:</label>
+                                    <div class="input-group input-group-sm input-group-change-amount">
+                                        <div class="input-group-addon">
+                                            <a href="#" class="input-group-change-amount__minus"><img src="img/icon/icon-minus-10x2.png" alt=""></a>
+                                        </div>
+                                        <input type="text" size="3" class="form-control text-center" value="1">
+                                        <div class="input-group-addon">
+                                            <a href="#" class="input-group-change-amount__plus"><img src="img/icon/icon-plus-10x10.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="help-block">* Количество юристов умножает стоимость тарифа</div>
+                            </div>
+
+                            <h5>Выберите дополнительные опции</h5>
+                            <div class="flex-box align-items-start justify-cont-between">
+                                <div class="checkbox checkbox-custom m-t-0 m-b-10 active">
+                                    <label>
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                                </span>
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-custom__caption">Приватный вопрос <br>
+Не публикуется в открытом доступе, видят только юристы.</span>
+                                    </label>
+                                </div>
+                                <div class="text-right">
+                                    +200 <span>&#8381;</span>
+                                </div>
+                            </div>
+                            <div class="flex-box align-items-start justify-cont-between">
+                                <div class="checkbox checkbox-custom m-t-0 m-b-10 active">
+                                    <label>
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                                </span>
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-custom__caption">Уведомление об ответах по электронной почте</span>
+                                    </label>
+                                </div>
+                                <div class="text-right">
+                                    Бесплатно
+                                </div>
+                            </div>
+
+                            <div class="text-right m-t-20">
+                                <span class="fw-500 fs-14">Итого: 499 <span>&#8381;</span></span>
+                            </div>
+
+                            <div class="text-right m-t-20">
+                                <a href="#" class="btn btn-primary btn-sm">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Авторизация
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>
+                                        Вам необходимо авторизоваться
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="w-300 center-block">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs kg-nav-tabs m-b-30 fs-15" role="tablist">
+                                    <li role="presentation" class="kg-nav-tabs__item active">
+                                        <a href="#tabLawyerRegistrationQuestion" class="kg-nav-tabs__btn" aria-controls="home" role="tab" data-toggle="tab">Регистрация</a>
+                                    </li>
+                                    <li role="presentation" class="kg-nav-tabs__item">
+                                        <a href="#tabLawyerLoginQuestion" class="kg-nav-tabs__btn" aria-controls="profile" role="tab" data-toggle="tab">Вход</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content m-b-20">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tabLawyerRegistrationQuestion">
+                                        @@include('_form-registration.html')
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tabLawyerLoginQuestion">
+                                        @@include('_form-login.html')
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-panel">
+                        <div class="kg-panel__header">
+                            <div class="kg-panel__header-body">
+                                <div class="kg-panel__title">
+                                    Авторизация
+                                </div>
+                                <div class="kg-panel__header-selected">
+                                    <div>
+                                        Вы авторизованы как <span class="fw-500">Владимир Владимирович</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-panel__body">
+                            <div class="w-300 center-block">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs kg-nav-tabs m-b-30 fs-15" role="tablist">
+                                    <li role="presentation" class="kg-nav-tabs__item">
+                                        <a href="#tabLawyerRegistrationQuestion2" class="kg-nav-tabs__btn" aria-controls="home" role="tab" data-toggle="tab">Регистрация</a>
+                                    </li>
+                                    <li role="presentation" class="kg-nav-tabs__item active">
+                                        <a href="#tabLawyerLoginQuestion2" class="kg-nav-tabs__btn" aria-controls="profile" role="tab" data-toggle="tab">Пользователь</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content m-b-20">
+                                    <div role="tabpanel" class="tab-pane fade" id="tabLawyerRegistrationQuestion2">
+                                        @@include('_form-registration.html')
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tabLawyerLoginQuestion2">
+                                        <form class="form-login-height form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Имя</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static fw-500">Владимир Владимирович</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Эл. почта</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static fw-500">example@example.dom</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Телефон</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static fw-500">+7 (999) 999-99-99</p>
+                                                </div>
+                                            </div>
+                                            <div class="m-t-20 text-center">
+                                                <a href="#" class="link-underline text-muted"><span class="glyphicon glyphicon-user m-r-10"></span>перейти в профиль пользователя</a>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-block fs-12 m-t-30">Выход</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center m-t-30">
+                    <a href="#" class="btn btn-primary">Отправить</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade in active" id="questionLawyerCategory">
+            <div class="kg-block-view__content-header">
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/icon/icon-question-white-26x28.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        <div class="thumb-icon__name">
+                            <a href="#" class="thumb-icon__name-link">Заплатил взятку</a>
+                        </div>
+                        <div class="thumb-icon__caption">
+                            <span class="text-light">Категория / подкатегория</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown m-l-20">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu_right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                <div class="kg-box">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">ФИО клиента:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static fw-500">Владимиров Владимир Владимирович</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Статус вопроса:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static"><img src="img/icon/icon-check.png" class="m-r-10" alt=""> - <span class="m-l-10">наименование статуса</span></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Тариф:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static fw-500">Краткий</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Количество юристов:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static fw-500">3</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Приватность:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static fw-500">Видят только юристы</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Список опций:</label>
+                            <div class="col-sm-9">
+                                <div class="form-control-static">
+                                    <ul class="kg-stylized-list">
+                                        <li>Супер опция 1</li>
+                                        <li>Супер опция 2</li>
+                                        <li>Супер опция 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Категория права:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static fw-500">Гражданское право / Регистрация бизнеса</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Заголовок проблемы:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static fw-500">Заплатил взятку</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Описание проблемы:</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Прикрепленные файлы:</label>
+                            <div class="col-sm-9">
+                                <ul class="kg-list-inline">
+                                    <li>
+                                        <div class="file-attachment" title="Регистрация.pdf">
+                                            <div class="flex-box">
+                                                <a href="#" class="file-attachment__preview">
+                                                    <img src="img/icon/icon-folder-grey.png" alt="">
+                                                </a>
+                                                <div class="file-attachment__tools">
+                                                    <a href="#" class="text-light" title="Скачать">
+                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="file-attachment__name">
+                                                <span class="file-attachment__name-filename">Регистрация</span>
+                                                <span class="file-attachment__name-filetype">.pdf</span>
+                                            </a>
+                                            <div class="file-attachment__caption">280 КБ</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="file-attachment" title="Регистрация.pdf">
+                                            <div class="flex-box">
+                                                <a href="#" class="file-attachment__preview">
+                                                    <img src="img/icon/icon-folder-grey.png" alt="">
+                                                </a>
+                                                <div class="file-attachment__tools">
+                                                    <a href="#" class="text-light" title="Скачать">
+                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="file-attachment__name">
+                                                <span class="file-attachment__name-filename">Регистрация</span>
+                                                <span class="file-attachment__name-filetype">.pdf</span>
+                                            </a>
+                                            <div class="file-attachment__caption">280 КБ</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="file-attachment" title="Регистрация.pdf">
+                                            <div class="flex-box">
+                                                <a href="#" class="file-attachment__preview">
+                                                    <img src="img/icon/icon-folder-grey.png" alt="">
+                                                </a>
+                                                <div class="file-attachment__tools">
+                                                    <a href="#" class="text-light" title="Скачать">
+                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="file-attachment__name">
+                                                <span class="file-attachment__name-filename">Регистрация</span>
+                                                <span class="file-attachment__name-filetype">.pdf</span>
+                                            </a>
+                                            <div class="file-attachment__caption">280 КБ</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Видео:</label>
+                            <div class="col-sm-9">
+                                <ul class="kg-list-inline">
+                                    <li>
+                                        <div class="kg-video">
+                                            <div class="kg-video-container">
+                                                <div class="kg-video-container__play">
+                                                    <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="kg-video">
+                                            <div class="kg-video-container">
+                                                <div class="kg-video-container__play">
+                                                    <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="kg-video">
+                                            <div class="kg-video-container">
+                                                <div class="kg-video-container__play">
+                                                    <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="m-b-20">
+                    <div class="flex-inline justify-cont-between align-items-start">
+                        <div>
+                            <span class="m-r-10">Взял в работу юрист</span>
+                            <div class="thumb-icon thumb-icon_inline thumb-icon_xs p-0">
+                                <a href="#" class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                    <img src="img/avatar.png" alt="">
+                                </a>
+                                <div class="thumb-icon__info">
+                                    <div class="thumb-icon__name">
+                                        <a href="#" class="thumb-icon__name-link">Алишер Усманов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-light m-l-20">21.01.2018</span>
+                    </div>
+                </div>
+                <div class="m-b-20">
+                    <div class="flex-inline justify-cont-between align-items-start">
+                        <div>
+                            <span class="m-r-10">Взял в работу юрист</span>
+                            <div class="thumb-icon thumb-icon_inline thumb-icon_xs p-0">
+                                <a href="#" class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                    <img src="img/avatar.png" alt="">
+                                </a>
+                                <div class="thumb-icon__info">
+                                    <div class="thumb-icon__name">
+                                        <a href="#" class="thumb-icon__name-link">Владимир Владимиров</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-light m-l-20">21.01.2018</span>
+                    </div>
+                </div>
+                <div class="m-b-20">
+                    <div class="flex-inline justify-cont-between align-items-start">
+                        <div>
+                            <span class="m-r-10">Взял в работу юрист</span>
+                            <div class="thumb-icon thumb-icon_inline thumb-icon_xs p-0">
+                                <a href="#" class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                    <img src="img/avatar.png" alt="">
+                                </a>
+                                <div class="thumb-icon__info">
+                                    <div class="thumb-icon__name">
+                                        <a href="#" class="thumb-icon__name-link">Алишер Усманов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-light m-l-20">21.01.2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade height-100-percent" id="questionLawyerCategoryItem">
+            <div class="flex-box flex-dir-col justify-cont-between height-100-percent kg-drop-area">
+                <div class="kg-drop-area__lay">
+                    <div class="kg-drop-area__container">
+                        <div class="kg-drop-area__container-body">
+                            Перетащите сюда файлы для загрузки
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="kg-block-view__content-header">
+                        <div class="thumb-icon">
+                            <a href="#"
+                               class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                <img src="img/avatar-white-29x29.png" alt="">
+                            </a>
+                            <div class="thumb-icon__info">
+                                <div class="thumb-icon__name">
+                                    <a href="#" class="thumb-icon__name-link">Заплатил взятку</a>
+                                </div>
+                                <div class="thumb-icon__caption">
+                                    <span class="text-light">Владимир Владимирович / Юрист (Москва)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-box">
+                            <div class="dropdown m-r-30">
+                                <button type="button" class="btn btn-default dropdown-toggle"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    Обратиться к этому юристу <span
+                                        class="glyphicon glyphicon-menu-down m-l-10"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="tools">
+                                <a href="#" class="tools__item">
+                                    <div class="kg-btn-file-load">
+                                        <label>
+                                            <img src="img/icon/icon-staple.png" alt="">
+                                            <input type="file" multiple>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a href="#" class="tools__item">
+                                    <img src="img/icon/icon-spam.png" alt="">
+                                </a>
+                                <a href="#" class="tools__item">
+                                    <img src="img/icon/icon-search.png" alt="">
+                                </a>
+                            </div>
+                            <div class="dropdown m-l-20">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu_right">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                        @@include('_chat-box.html')
+                    </div>
+                </div>
+                <div class="kg-block-view__content-footer">
+                    <div class="kg-sending-block kg-sending-block_final-msg">
+                        <div class="checkbox checkbox-custom checkbox-custom_animate">
+                            <label>
+                                <span class="checkbox-custom__toggle">
+                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                </span>
+                                <input type="checkbox">
+                                <span class="checkbox-custom__caption">Отправить как финальный ответ</span>
+                            </label>
+                            <div class="checkbox-custom__bar"></div>
+                        </div>
+                        <div class="kg-sending-block__inner-wrap">
+                            <textarea class="form-control" rows="1" placeholder="Введите сообщение ..."></textarea>
+                            <div class="flex-box align-items-center">
+                                <div class="kg-btn-file-load m-l-20">
+                                    <label>
+                                        <img src="img/icon/icon-staple-20x22.png" alt="">
+                                        <input type="file" multiple="">
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary fs-12 m-l-20">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

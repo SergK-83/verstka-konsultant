@@ -1,0 +1,76 @@
+/*
+====================================
+  table-tariff
+====================================
+*/
+
+.table-tariff {
+  background-color: #fff;
+
+  td {
+    text-align: center;
+  }
+
+  thead td {
+    width: 130px;
+    padding: 15px;
+    vertical-align: top;
+    background-color: $orange;
+    color: #fff;
+  }
+
+  thead td:first-child {
+    width: 150px;
+    font-size: 15px;
+    vertical-align: bottom;
+    background-color: #fcfcfc;
+    color: #000;
+  }
+
+  thead td.highlighted {
+    background-color: #ff581b;
+  }
+
+  thead td img {
+    margin-bottom: 20px;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #fcfcfc;
+  }
+
+  tbody tr:nth-child(even) td:first-child {
+    background-color: #fcfcfc;
+  }
+
+  tbody tr:nth-child(odd) td:first-child {
+    background-color: #f5f5f5;
+  }
+
+  tbody td, tfoot td {
+    padding: 15px 6px;
+    vertical-align: middle;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  tfoot td {
+    background-color: #fcfcfc;
+  }
+}
+
+.table-tariff__name {
+  font-size: 13px;
+}
+
+.table-tariff__name-caption {
+  font-weight: 500;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.table-tariff__name-caption_price {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 7px;
+}

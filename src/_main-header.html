@@ -1,0 +1,82 @@
+<header id="mainHeader" class="main-header main-header_fixed-top">
+    <button type="button" id="mainHeaderToggle" class="main-header__toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="main-header__top">
+        <div class="container">
+            <div class="main-header__top-inner-wrap">
+                <div class="main-header__top-menu">
+                    <ul class="nav nav-pills">
+                        <li role="presentation"><a href="#" class="link-disabled" title="Находится в разработке">Оплата</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Компаниям</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Инвесторам</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">О проекте</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">История</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Услуги</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Юристы</a></li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation">
+                            <a href="#modalLocation" class="location" data-toggle="modal">
+                                <span class="text-primary"><u>Москва</u> <span class="dropdown__icon-down"></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="dropdown main-header__user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div class="flex-box align-items-center text-white">
+                                    <div>
+                                        <div class="main-header__user-title">Константин Константинович</div>
+                                        <div class="main-header__user-caption">Юрист</div>
+                                    </div>
+                                    <span class="dropdown__icon-down"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header__bottom">
+        <div class="container">
+            <div class="main-header__bottom-inner-wrap">
+                @@include('_main-header-logo.html')
+
+                @@include('_main-search.html')
+                <ul class="nav nav-pills">
+                    <li role="presentation">
+                        <a href="questions.html">Вопросы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать вопрос"></span></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Заказать документ</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="lawyer-list.html">Консультация в чате</a></li>
+                    <li role="presentation"><a href="phone-advice.html">Телефонная консультация</a></li>
+                    <li role="presentation">
+                        <a href="list-request-to-organs.html">Запросы в органы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать запрос"></span></a>
+                    </li>
+                    <li role="presentation"><a href="meetings.html">Встречa с юристом</a></li>
+                    <li role="presentation">
+                        <a href="#" class="link-disabled" title="Находится в разработке">Создать дело</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @@include('_kg-desktop-menu.html')
+</header>

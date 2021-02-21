@@ -1,0 +1,34 @@
+/*
+====================================
+  kg-file-preview
+====================================
+*/
+
+.kg-file-preview {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  .tools__item + .tools__item {
+    margin-left: 6px;
+  }
+}
+
+.kg-file-preview__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.kg-file-preview__footer {
+  margin-top: 5px;
+}
+
+.kg-file-preview__tools {
+  font-size: 11px;
+}

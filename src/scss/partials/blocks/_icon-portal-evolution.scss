@@ -1,0 +1,29 @@
+/*
+====================================
+  icon-portal-evolution
+====================================
+*/
+
+.dropdown_icon-portal-evolution {
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+.icon-portal-evolution {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: url("../img/icon/icon-like-green-44x40.png") no-repeat;
+  background-size: cover;
+}
+
+.dropdown_icon-portal-evolution .dropdown-menu {
+  left: -12px;
+  text-align: center;
+  width: 330px;
+  margin-top: -15px;
+  padding: 15px 30px 20px;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+  box-shadow: 0 10px 14.56px 1.44px rgba(0, 0, 0, 0.25);
+}

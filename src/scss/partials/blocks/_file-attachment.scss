@@ -1,0 +1,172 @@
+/*
+====================================
+  file-attachment
+====================================
+*/
+
+.file-attachment {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.file-attachment__preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  padding: 3px;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.file-attachment__preview img {
+  max-width: 100%;
+}
+
+.file-attachment__name {
+  display: flex;
+  color: $orange;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.file-attachment__name-filename {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-attachment__caption {
+  padding-left: 5px;
+  color: #8c8c8c;
+  font-size: 10px;
+}
+
+.file-attachment__tools {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.file-attachment__btn {
+  border-width: 1px;
+}
+
+.kg-file-attachment__remove {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.kg-file-attachment__remove:after {
+  content: '\2716';
+}
+
+.file-attachment__scale {
+  position: relative;
+}
+
+.file-attachment__scale:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0, .3);
+}
+
+.file-attachment__scale:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: url("../img/icon/icon-search-white.png") no-repeat center center;
+  background-size: contain;
+}
+
+.file-attachment_doc {
+  padding: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  .file-attachment__preview {
+    width: 42px;
+    height: auto;
+    padding: 0;
+  }
+
+  .file-attachment__tools {
+    margin-left: 3px;
+  }
+}
+
+.file-attachment__price {
+  font-size: 11px;
+  line-height: 1;
+  color: #777;
+}
+
+.file-attachment_box {
+  width: 120px;
+  height: 170px;
+  padding-top: 35px;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+
+  .file-attachment__tools {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4px 4px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .file-attachment__icon-favorites {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+  }
+
+  .file-attachment__preview {
+    align-items: flex-start;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+    width: 56px;
+    height: 75px;
+    padding: 0;
+    background: transparent;
+    margin-bottom: 9px;
+  }
+
+  .file-attachment__caption {
+    padding-left: 0;
+    text-align: center;
+    color: #333;
+  }
+
+  .file-attachment__btn {
+    margin-top: 8px;
+  }
+}
+
+.file-attachment_box_sale {
+  background-color: #f8f8f8;
+}
+
+.kg-list-inline_files li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

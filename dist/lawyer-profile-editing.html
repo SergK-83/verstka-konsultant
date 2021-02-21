@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/typeahead/css/typeahead.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body class="bg-light-gray">
+
+<header id="mainHeader" class="main-header main-header_fixed-top">
+    <button type="button" id="mainHeaderToggle" class="main-header__toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="main-header__top">
+        <div class="container">
+            <div class="main-header__top-inner-wrap">
+                <div class="main-header__top-menu">
+                    <ul class="nav nav-pills">
+                        <li role="presentation"><a href="#" class="link-disabled" title="Находится в разработке">Оплата</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Компаниям</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Инвесторам</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">О проекте</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">История</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Услуги</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Юристы</a></li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation">
+                            <a href="#modalLocation" class="location" data-toggle="modal">
+                                <span class="text-primary"><u>Москва</u> <span class="dropdown__icon-down"></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="dropdown main-header__user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div class="flex-box align-items-center text-white">
+                                    <div>
+                                        <div class="main-header__user-title">Константин Константинович</div>
+                                        <div class="main-header__user-caption">Юрист</div>
+                                    </div>
+                                    <span class="dropdown__icon-down"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header__bottom">
+        <div class="container">
+            <div class="main-header__bottom-inner-wrap">
+                <div class="main-header__logo dropdown">
+    <img src="img/logo-109x106.png" alt="" class="dropdown-toggle" data-toggle="dropdown">
+    <ul class="dropdown-menu fs-11">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="authorization.html">Вход / Регистрация</a></li>
+        <li><a href="lawyer-list.html">Консультация в чате</a></li>
+        <li><a href="request-to-organ.html">Запрос в орган</a></li>
+        <li><a href="list-request-to-organs.html">Список запросов в органы</a></li>
+        <li><a href="question.html">Вопрос</a></li>
+        <li><a href="questions.html">Список вопросов</a></li>
+        <li><a href="modal-client-lawyer.html">Modal - Клиент/Юрист</a></li>
+        <li><a href="user-profile.html">Просмотр профиля пользователя</a></li>
+        <li><a href="lawyer-profile.html">Профиль Юриста</a></li>
+        <li><a href="lawyer-profile-view-lawyer.html">Профиль Юриста - взгляд Юриста</a></li>
+        <li><a href="lawyer-profile-editing.html">Профиль Юриста - Редактирование</a></li>
+    </ul>
+</div>
+
+                <div class="main-search main-search_disabled" title="Функционал находится в разработке">
+    <input type="text" class="form-control" placeholder="Поиск ...">
+    <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+</div>
+                <ul class="nav nav-pills">
+                    <li role="presentation">
+                        <a href="questions.html">Вопросы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать вопрос"></span></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Заказать документ</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="lawyer-list.html">Консультация в чате</a></li>
+                    <li role="presentation"><a href="phone-advice.html">Телефонная консультация</a></li>
+                    <li role="presentation">
+                        <a href="list-request-to-organs.html">Запросы в органы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать запрос"></span></a>
+                    </li>
+                    <li role="presentation"><a href="meetings.html">Встречa с юристом</a></li>
+                    <li role="presentation">
+                        <a href="#" class="link-disabled" title="Находится в разработке">Создать дело</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kg-desktop main-header__kg-desktop">
+    <div class="kg-desktop__menu">
+        <div class="kg-desktop__menu-inner-wrap">
+            <div class="kg-desktop__menu-avatar" style="display:none;">
+                <a href="#" title="Владимир Владимирович">
+                    <img src="img/avatar.png" class="kg-desktop__menu-avatar-img" alt="">
+                    <div class="kg-desktop__menu-avatar-caption">Владимир</div>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="authorization.html" class="btn btn-primary-inverse kg-desktop__menu-btn-login" title="Авторизация">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                </a>
+            </div>
+            <ul class="kg-desktop__tab-list">
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopNotice" data-toggle="tab" title="Уведомления">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_notice"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item kg-desktop__tab-item_disabled">
+                    <a href="#desktopDialog" data-toggle="tab" title="Чат в разработке">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_dialog"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopQuestion" data-toggle="tab" title="Вопросы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_question">
+                            <span class="kg-desktop__tab-notice" title="Новые уведомления"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopDocs" data-toggle="tab" title="Документы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_docs"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopPhoneAdvice" data-toggle="tab" title="Телефонные консультации">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_phone"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopOrganReport" data-toggle="tab" title="Ответы от органов">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_organ"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopDeal" data-toggle="tab" title="Услуги">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_deal"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopMeet" data-toggle="tab" title="Встречи">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_meet"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopMoney" data-toggle="tab" title="Финансы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_money"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopFavorites" data-toggle="tab" title="Избранное">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_favorites"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</header>
+
+<main class="main-container">
+    <div class="container">
+        <div class="custom-grid">
+            <div class="custom-grid__main-col">
+                <div class="kg-box bg-gray">
+                    <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                        <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                        <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                            <div class="dropdown-menu__body">
+                                <div class="text-center">
+                                    <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                </div>
+                                <h4>Участвует в развитии портала</h4>
+                                <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного
+                                    юриста</p>
+                                <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover"
+                          title="Добавить в избраноое"></span>
+                    <div class="thumb-subject">
+                        <a href="#" class="thumb-subject__img">
+                            <div class="thumb-subject__img-inner-wrap">
+                                <img src="img/avatar-78x78.png" alt="">
+                            </div>
+                            <span class="icon-status icon-status_online thumb-subject__icon-status"
+                                  title="В сети"></span>
+                        </a>
+                    </div>
+                    <button type="button"
+                            class="btn btn-primary-inverse btn-thin-border text-muted btn-xs btn-block kg-btn-split">
+                        <span class="fs-11">Изменить фото</span>
+                        <span class="kg-btn-split__icon">
+                            <span class="glyphicon glyphicon-camera"></span>
+                        </span>
+                    </button>
+                    <div class="m-t-15">
+                        <div class="kg-input kg-input_xs m-b-10">
+                            <input type="text" class="kg-input__input p-lr-0" required>
+                            <label class="kg-input__label">Фамилия:</label>
+                            <div class="kg-input__bar"></div>
+                        </div>
+                        <div class="kg-input kg-input_xs m-b-10">
+                            <input type="text" class="kg-input__input p-lr-0" required>
+                            <label class="kg-input__label">Имя:</label>
+                            <div class="kg-input__bar"></div>
+                        </div>
+                        <div class="kg-input kg-input_xs m-b-10">
+                            <input type="text" class="kg-input__input p-lr-0" required>
+                            <label class="kg-input__label">Отчество:</label>
+                            <div class="kg-input__bar"></div>
+                        </div>
+                        <div class="kg-input kg-input_xs m-b-10">
+                            <input type="text" class="kg-input__input p-lr-0" required>
+                            <label class="kg-input__label">Должность:</label>
+                            <div class="kg-input__bar"></div>
+                        </div>
+                        <div class="kg-input kg-input_xs m-b-10">
+                            <input type="text" class="kg-input__input p-lr-0" required>
+                            <label class="kg-input__label">Город:</label>
+                            <div class="kg-input__bar"></div>
+                        </div>
+                        <div class="kg-input kg-input_xs m-b-10">
+                            <input type="text" class="kg-input__input p-lr-0" required>
+                            <label class="kg-input__label">Стаж:</label>
+                            <div class="kg-input__bar"></div>
+                        </div>
+                        <div class="flex-box justify-cont-between flex-wrap m-t-20">
+                            <button class="btn btn-default btn-xs btn-thin-border text-black m-b-5">Отмена</button>
+                            <button class="btn btn-primary btn-xs btn-thin-border m-b-5">Сохранить</button>
+                        </div>
+                    </div>
+                    <hr class="hr-bw-2">
+                    <h6 class="text-primary fs-11">О себе</h6>
+                    <textarea name="" rows="4" class="form-control textarea-autosize fs-11 m-b-15"
+                              style="min-height: 74px" placeholder="Написать о себе..."></textarea>
+                    <div class="fs-10">
+                        <span class="text-light m-r-5">На проекте:</span>
+                        <span>с 3 июня 2018</span>
+                    </div>
+                    <hr class="hr-bw-2">
+                    <h6 class="text-primary fs-11">Образование <span class="badge badge-primary fs-9 pull-right">Проверено</span>
+                    </h6>
+                    <div>
+                        <div class="add-block">
+                            <hr class="hr-dashed">
+                            <div class="flex-box align-items-start justify-cont-between">
+                                <div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Страна:</span>
+                                        <span>Россия</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Город:</span>
+                                        <span>Москва</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Вуз:</span>
+                                        <span>МГЮА</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Факультет:</span>
+                                        <span>Правоведение</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Год выпуска:</span>
+                                        <span>2010</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-clear-all btn-clear-all_xs no-border action-remove" type="button"
+                                        title="Удалить"></button>
+                            </div>
+                        </div>
+                        <div class="add-block">
+                            <hr class="hr-dashed">
+                            <div class="flex-box align-items-start justify-cont-between">
+                                <div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Страна:</span>
+                                        <span>Россия</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Город:</span>
+                                        <span>Москва</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Вуз:</span>
+                                        <span>МГЮА</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Факультет:</span>
+                                        <span>Правоведение</span>
+                                    </div>
+                                    <div class="fs-10">
+                                        <span class="text-light m-r-5">Год выпуска:</span>
+                                        <span>2010</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-clear-all btn-clear-all_xs no-border action-remove" type="button"
+                                        title="Удалить"></button>
+                            </div>
+                        </div>
+                        <hr class="hr-dashed">
+
+                        <div class="collapse" id="collapseFormEducation">
+                            <div class="kg-box">
+                                <button class="btn kg-box__btn-clear-all btn-clear-all btn-clear-all_xs no-border"
+                                        type="button" data-target="#collapseFormEducation"
+                                        data-toggle="collapse"></button>
+                                <div class="kg-input kg-input_xs m-b-10">
+                                    <input type="text" class="kg-input__input p-lr-0" required>
+                                    <label class="kg-input__label">Страна:</label>
+                                    <div class="kg-input__bar"></div>
+                                </div>
+                                <div class="kg-input kg-input_xs m-b-10">
+                                    <input type="text" class="kg-input__input p-lr-0" required>
+                                    <label class="kg-input__label">Город:</label>
+                                    <div class="kg-input__bar"></div>
+                                </div>
+                                <div class="kg-input kg-input_xs m-b-10">
+                                    <input type="text" class="kg-input__input p-lr-0" required>
+                                    <label class="kg-input__label">Вуз:</label>
+                                    <div class="kg-input__bar"></div>
+                                </div>
+                                <div class="kg-input kg-input_xs m-b-10">
+                                    <input type="text" class="kg-input__input p-lr-0" required>
+                                    <label class="kg-input__label">Факультет:</label>
+                                    <div class="kg-input__bar"></div>
+                                </div>
+                                <div class="kg-input kg-input_xs m-b-10">
+                                    <input type="text" class="kg-input__input p-lr-0" required>
+                                    <label class="kg-input__label">Год выпуска:</label>
+                                    <div class="kg-input__bar"></div>
+                                </div>
+
+                                <div class="flex-box justify-cont-between flex-wrap m-t-30">
+                                    <button class="btn btn-default btn-xs btn-thin-border text-black m-b-5"
+                                            data-target="#collapseFormEducation" data-toggle="collapse">Отмена
+                                    </button>
+                                    <button class="btn btn-primary btn-xs btn-thin-border m-b-5">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-xs btn-block kg-btn-split m-t-15"
+                                data-target="#collapseFormEducation" data-toggle="collapse">
+                            <span class="fs-10">Добавить образование</span>
+                            <span class="kg-btn-split__icon">
+                            <span class="fs-16">+</span>
+                        </span>
+                        </button>
+                    </div>
+                    <hr class="hr-bw-2">
+                    <h6 class="text-primary fs-11">Награды</h6>
+                    <div class="fancybox-gallery">
+                        <div class="file-attachment file-attachment_doc add-block" title="Награда за отвагу">
+                            <div class="flex-box">
+                                <a href="img/fancy.png" class="file-attachment__preview file-attachment__scale"
+                                   data-fancybox="gallery">
+                                    <img src="img/diploma.png" alt="">
+                                </a>
+                                <div class="file-attachment__tools">
+                                    <span class="text-light action-remove" title="Удалить">
+                                        <span class="kg-file-attachment__remove"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-attachment file-attachment_doc add-block" title="Награда за отвагу">
+                            <div class="flex-box">
+                                <a href="img/fancy.png" class="file-attachment__preview file-attachment__scale"
+                                   data-fancybox="gallery">
+                                    <img src="img/diploma.png" alt="">
+                                </a>
+                                <div class="file-attachment__tools">
+                                    <span class="text-light action-remove" title="Удалить">
+                                        <span class="kg-file-attachment__remove"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-attachment file-attachment_doc add-block" title="Награда за отвагу">
+                            <div class="flex-box">
+                                <a href="img/fancy.png" class="file-attachment__preview file-attachment__scale"
+                                   data-fancybox="gallery">
+                                    <img src="img/diploma.png" alt="">
+                                </a>
+                                <div class="file-attachment__tools">
+                                    <span class="text-light action-remove" title="Удалить">
+                                        <span class="kg-file-attachment__remove"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-attachment file-attachment_doc add-block" title="Награда за отвагу">
+                            <div class="flex-box">
+                                <a href="img/fancy.png" class="file-attachment__preview file-attachment__scale"
+                                   data-fancybox="gallery">
+                                    <img src="img/diploma.png" alt="">
+                                </a>
+                                <div class="file-attachment__tools">
+                                    <span class="text-light action-remove" title="Удалить">
+                                        <span class="kg-file-attachment__remove"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-attachment file-attachment_doc add-block" title="Награда за отвагу">
+                            <div class="flex-box">
+                                <a href="img/fancy.png" class="file-attachment__preview file-attachment__scale"
+                                   data-fancybox="gallery">
+                                    <img src="img/diploma.png" alt="">
+                                </a>
+                                <div class="file-attachment__tools">
+                                    <span class="text-light action-remove" title="Удалить">
+                                        <span class="kg-file-attachment__remove"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-attachment file-attachment_doc add-block" title="Награда за отвагу">
+                            <div class="flex-box">
+                                <a href="img/fancy.png" class="file-attachment__preview file-attachment__scale"
+                                   data-fancybox="gallery">
+                                    <img src="img/diploma.png" alt="">
+                                </a>
+                                <div class="file-attachment__tools">
+                                    <span class="text-light action-remove" title="Удалить">
+                                        <span class="kg-file-attachment__remove"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-dashed">
+                    <button type="button" class="btn btn-primary btn-xs btn-block kg-btn-split m-t-15"
+                            data-toggle="tooltip" data-placement="bottom" title="Добавить награды">
+                        <span class="fs-10">Добавить награды</span>
+                        <span class="kg-btn-split__icon">
+                            <span class="fs-16">+</span>
+                        </span>
+                    </button>
+                    <hr class="hr-bw-2">
+                    <div class="bg-blue text-white p-10 m-b-15">
+                        <div class="fs-14 m-b-5">Юрист помог вам?</div>
+                        <p class="fs-11">Поддержите его! Отправьте в благотворительность небольшую денежную сумму.</p>
+                        <a href="#" class="btn btn-block btn-xs btn-white-inverse m-t-20">Отблагодарить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-grid__content-col">
+                <h6 class="text-primary fs-13 m-t-20">Специализации:</h6>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul class="checkbox-custom-list">
+                            <li>
+                                <div class="checkbox checkbox-custom checkbox-custom-list__controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__toggle">
+                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                        </span>
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom__caption fs-13 fw-500">Гражданское право</span>
+                                    </label>
+                                </div>
+                                <ul class="checkbox-custom-list__content p-l-20 fs-11">
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="checkbox-custom-list">
+                            <li>
+                                <div class="checkbox checkbox-custom checkbox-custom-list__controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__toggle">
+                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                        </span>
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom__caption fs-13 fw-500">Гражданское право</span>
+                                    </label>
+                                </div>
+                                <ul class="checkbox-custom-list__content p-l-20 fs-11">
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="checkbox-custom-list">
+                            <li>
+                                <div class="checkbox checkbox-custom checkbox-custom-list__controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__toggle">
+                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                        </span>
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom__caption fs-13 fw-500">Гражданское право</span>
+                                    </label>
+                                </div>
+                                <ul class="checkbox-custom-list__content p-l-20 fs-11">
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox checkbox-custom m-0">
+                                            <label class="flex-box">
+                                                <span class="checkbox-custom__toggle">
+                                                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                         alt="">
+                                                </span>
+                                                <input type="checkbox">
+                                                <span class="checkbox-custom__caption">Договорное право</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h6 class="text-primary fs-13 m-t-20">Видео приветствие:</h6>
+                <div class="kg-video-install m-t-20">
+                    <div class="flex-box align-items-start">
+                        <div class="kg-video-container kg-video-install__kg-video-container text-center">
+                            <div class="kg-video-install__video-caption text-muted">
+                                Добавьте видео для приветствия клиентов на странице вашего профиля
+                            </div>
+
+                            <iframe class="kg-video-install__iframe" width="100%" height="100%"
+                                src="https://www.youtube.com/embed/11GEpAWB-9I" frameborder="0"
+                                allowfullscreen=""></iframe>
+                        </div>
+                        <button class="btn btn-clear-all no-border kg-video-install__clear" type="button" title="Удалить видео"></button>
+                    </div>
+                    <div class="form-group m-t-15">
+                        <label class="fs-12">Загрузить новое видео приветствие:</label>
+                        <input type="text" class="form-control kg-video-install__input"
+                               placeholder="Ссылка на видео YouTube" value="https://www.youtube.com/embed/11GEpAWB-9I">
+                        <button class="btn btn-primary btn-xs m-t-10 kg-video-install__btn" type="button">Применить ссылку</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h6 class="text-primary fs-13 m-t-20">Услуги и цены:</h6>
+                <div class="m-t-20 fs-12">
+                    <div class="kg-switchable-form-wrap">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="kg-switch kg-switch_form-toggle">
+                                    <div class="kg-switch__onoff">
+                                        <label class="kg-switch__onoff-label">
+                                            <input type="checkbox" name="" class="kg-switch__onoff-checkbox">
+                                            <span class="kg-switch__onoff-inner"></span>
+                                            <span class="kg-switch__onoff-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="kg-switch__title">Задать вопрос</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <fieldset class="kg-switchable-form kg-switchable-form_disable" disabled>
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control input-sm m-r-5"
+                                               placeholder="Укажите стоимость">
+                                        <label>руб.</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kg-switchable-form-wrap m-t-15">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="kg-switch kg-switch_form-toggle">
+                                    <div class="kg-switch__onoff">
+                                        <label class="kg-switch__onoff-label">
+                                            <input type="checkbox" name="" class="kg-switch__onoff-checkbox">
+                                            <span class="kg-switch__onoff-inner"></span>
+                                            <span class="kg-switch__onoff-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="kg-switch__title">Телефонная консультация</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <fieldset class="kg-switchable-form kg-switchable-form_disable" disabled>
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control input-sm m-r-5"
+                                               placeholder="Укажите стоимость">
+                                        <label>руб/мин.</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h6 class="text-primary fs-13 m-t-20">Настройка рабочего времени:</h6>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="fs-12">Часовой пояс</label>
+                            <select class="kg-select2 form-control">
+                                <option value="">Регион-1</option>
+                                <option value="" selected>Москва (GMT+03:00)</option>
+                                <option value="">Регион-2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-shadow m-t-30">
+                    <table class="custom-table custom-table-timing">
+                        <thead class="bg-black text-primary text-center fs-11">
+                        <tr>
+                            <th colspan="15">
+                                <button class="btn btn-xs btn-primary-inverse btn-thin-border custom-table-timing__select-all m-r-10">
+                                    Выбрать все / отмена
+                                </button>
+                                <button class="btn btn-xs btn-primary-inverse btn-thin-border custom-table-timing__select-work-time">
+                                    Рабочее время
+                                </button>
+                            </th>
+                            <th colspan="10">
+                                <div class="text-right">
+                                    <span class="text-light fw-400">Всего  часов в рабочее время: <span
+                                            class="custom-table-timing__hours-number text-white m-l-10"></span></span>
+                                </div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody class="fs-11 table-vertical-lines table-horizontal-lines text-center">
+                        <tr class="custom-table-timing__workday">
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Пн</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        <tr class="custom-table-timing__workday">
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Вт</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        <tr class="custom-table-timing__workday">
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Ср</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        <tr class="custom-table-timing__workday">
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Чт</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        <tr class="custom-table-timing__workday">
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Пт</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Сб</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_text-left checkbox-custom_inline m-0 custom-table-timing__row-controller">
+                                    <label class="flex-box">
+                                        <span class="checkbox-custom__caption text-uppercase">Вс</span>
+                                        <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                            <td>
+                                <div class="custom-table-timing__toggle"></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot class="text-center">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>00</div>
+                                            <div>01</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>01</div>
+                                            <div>02</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>02</div>
+                                            <div>03</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>03</div>
+                                            <div>04</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>04</div>
+                                            <div>05</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>05</div>
+                                            <div>06</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>06</div>
+                                            <div>07</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>07</div>
+                                            <div>08</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>08</div>
+                                            <div>09</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>09</div>
+                                            <div>10</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>10</div>
+                                            <div>11</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>11</div>
+                                            <div>12</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>12</div>
+                                            <div>13</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>13</div>
+                                            <div>14</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>14</div>
+                                            <div>15</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>15</div>
+                                            <div>16</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>16</div>
+                                            <div>17</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>17</div>
+                                            <div>18</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>18</div>
+                                            <div>19</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>19</div>
+                                            <div>20</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>20</div>
+                                            <div>21</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>21</div>
+                                            <div>22</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>22</div>
+                                            <div>23</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox checkbox-custom checkbox-custom_vertical checkbox-custom_inline m-0 custom-table-timing__col-controller">
+                                    <label>
+                                    <span class="checkbox-custom__toggle">
+                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                    </span>
+                                        <input type="checkbox">
+                                        <div class="checkbox-custom__caption">
+                                            <div>23</div>
+                                            <div>24</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <hr>
+
+                <h6 class="text-primary fs-13 m-t-20">Адрес:</h6>
+                <div class="form-group m-t-15">
+                    <div class="checkbox checkbox-custom" data-target="#collapseAddressBlock" data-toggle="collapse">
+                        <label class="flex-box">
+                                        <span class="checkbox-custom__toggle">
+                                            <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                                        </span>
+                            <input type="checkbox">
+                            <span class="checkbox-custom__caption fs-13">Не указывать адрес</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="collapse in" id="collapseAddressBlock">
+                    <hr class="hr-dashed">
+                    <div class="form-group m-t-15">
+                        <input type="text" class="form-control" value="Москва, Новогереевская 35, стр.4, офис 305">
+                    </div>
+                    <div id="mapLawyerProfile" class="map m-t-20"></div>
+                </div>
+
+                <hr>
+
+                <h6 class="text-primary fs-13 m-t-20">Прайс юриста:</h6>
+
+                <div class="kg-lawyer-price m-t-30">
+                    <div class="bg-black text-primary text-center fs-12 p-10">
+                        <div class="row">
+                            <div class="col-xs-7">Название</div>
+                            <div class="col-xs-2">Цена/руб</div>
+                            <div class="col-xs-2">Ед.изм.</div>
+                        </div>
+                    </div>
+                    <div class="bg-gray fs-11 p-15">
+                        <div>
+                            <button type="button"
+                                    class="btn btn-primary btn-xs kg-btn-split btn-thin-border kg-lawyer-price__create-price">
+                                <span class="fs-10">Создать прайс лист</span>
+                                <span class="kg-btn-split__icon">
+                                    <span class="glyphicon glyphicon-list-alt"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <ol class="kg-sort-list kg-sort-list__main kg-sort-list_vertical kg-lawyer-price__kg-sort-list kg-sort-list_unstyled">
+                            <li class="kg-sort-list__item kg-sort-list__item-main">
+                                <div class="kg-switch-list">
+                                    <div class="kg-sort-list__item-header">
+                                        <div class="kg-sort-list__item-tools">
+                                            <div class="kg-sort-list__mover kg-sort-list__mover_main">
+                                                <span class="glyphicon glyphicon-option-vertical"></span>
+                                            </div>
+                                            <div class="kg-switch kg-switch-list__controller"
+                                                 title="Блокировка раздела">
+                                                <div class="kg-switch__onoff">
+                                                    <label class="kg-switch__onoff-label">
+                                                        <input type="checkbox" name="" class="kg-switch__onoff-checkbox"
+                                                               checked>
+                                                        <span class="kg-switch__onoff-inner"></span>
+                                                        <span class="kg-switch__onoff-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box align-items-start flex-grow-1">
+                                            <div class="kg-sort-list__item-name">
+                                                <input class="form-control" type="text" value="Документы"
+                                                       placeholder="Название раздела">
+                                                <div class="fs-10">
+                                                    <a href="javascript:void(0)"
+                                                       class="kg-lawyer-price__add-section m-r-20 disabled">Создать
+                                                        новый раздел</a>
+                                                    <a href="javascript:void(0)"
+                                                       class="kg-lawyer-price__add-subsection disabled">Добавить
+                                                        услугу</a>
+                                                </div>
+                                            </div>
+                                            <div class="kg-sort-list__item-remove">
+                                                <button class="btn btn-clear-all action-remove kg-sort-list__item-main-remove"
+                                                        type="button" title="Удалить раздел"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="kg-sort-list__sub kg-switch-list__content">
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Оформление документов, необходимых для приёма сотрудника</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control input-sm" type="text" value="500"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Устная консультация</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control" type="text" value="1000"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Арбитраж</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control" type="text" value="8700"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li class="kg-sort-list__item kg-sort-list__item-main">
+                                <div class="kg-switch-list">
+                                    <div class="kg-sort-list__item-header">
+                                        <div class="kg-sort-list__item-tools">
+                                            <div class="kg-sort-list__mover kg-sort-list__mover_main">
+                                                <span class="glyphicon glyphicon-option-vertical"></span>
+                                            </div>
+                                            <div class="kg-switch kg-switch-list__controller"
+                                                 title="Блокировка раздела">
+                                                <div class="kg-switch__onoff">
+                                                    <label class="kg-switch__onoff-label">
+                                                        <input type="checkbox" name="" class="kg-switch__onoff-checkbox"
+                                                               checked>
+                                                        <span class="kg-switch__onoff-inner"></span>
+                                                        <span class="kg-switch__onoff-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box align-items-start flex-grow-1">
+                                            <div class="kg-sort-list__item-name">
+                                                <input class="form-control" type="text" value="Прочие услуги"
+                                                       placeholder="Название раздела">
+                                                <div class="fs-10">
+                                                    <a href="javascript:void(0)"
+                                                       class="kg-lawyer-price__add-section m-r-20 disabled">Создать
+                                                        новый раздел</a>
+                                                    <a href="javascript:void(0)"
+                                                       class="kg-lawyer-price__add-subsection disabled">Добавить
+                                                        услугу</a>
+                                                </div>
+                                            </div>
+                                            <div class="kg-sort-list__item-remove">
+                                                <button class="btn btn-clear-all action-remove kg-sort-list__item-main-remove"
+                                                        type="button" title="Удалить раздел"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="kg-sort-list__sub kg-switch-list__content">
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Услуга 1</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control input-sm" type="text" value="500"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Услуга 2</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control" type="text" value="1000"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Услуга 3</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control" type="text" value="8700"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                        <li class="kg-sort-list__item">
+                                            <div class="kg-sort-list__item-tools">
+                                                <div class="kg-sort-list__mover kg-sort-list__mover_sub">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </div>
+                                                <div class="kg-switch" title="Блокировка услуги">
+                                                    <div class="kg-switch__onoff">
+                                                        <label class="kg-switch__onoff-label">
+                                                            <input type="checkbox" name=""
+                                                                   class="kg-switch__onoff-checkbox" checked>
+                                                            <span class="kg-switch__onoff-inner"></span>
+                                                            <span class="kg-switch__onoff-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="kg-icon-circle-plus animation-scale-hover kg-lawyer-price__add-subsection"
+                                                      title="Добавить услугу"></span>
+                                            </div>
+                                            <div class="form-group-sm flex-box justify-cont-between">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Название услуги">Услуга 4</textarea>
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <input class="form-control" type="text" value="8700"
+                                                               placeholder="Цена">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <textarea name="" rows="1"
+                                                                  class="form-control textarea-autosize"
+                                                                  placeholder="Ед. изм.">Работа</textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-clear-all action-remove" type="button"
+                                                        title="Удалить"></button>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text-right m-t-20">
+                    <button type="button" class="btn btn-default btn-lg m-r-10">Отмена</button>
+                    <button type="button" class="btn btn-primary btn-lg">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="main-footer__aside">
+                    <div class="main-footer__logo">
+                        <img src="img/logo-109x106.png" alt="">
+                    </div>
+                    <div class="soc-net main-footer__soc-net">
+                        <a href="#" class="soc-net__item soc-net__item_fb animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_twitter animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_vk animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_youtube animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_inst animation-scale-hover"></a>
+                    </div>
+                    <div class="fs-10 text-light">© 2018 KonsultantRU</div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="main-footer__menu">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">О компании</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">Инвесторам</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">Развитие портала</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- scroll up -->
+<div id="scrollup" class="scrollup-wrap">
+    <div class="scrollup">
+        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="libs/typeahead/js/typeahead.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

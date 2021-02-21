@@ -1,0 +1,82 @@
+/*
+====================================
+  kg-btn-toggle-plus-minus
+====================================
+*/
+
+.kg-btn-toggle-plus-minus {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+}
+
+.kg-btn-toggle-plus-minus__icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  background: url("../img/icon/sprite-plus--minus-.png") no-repeat bottom center;
+  animation-name: show-minus;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.kg-btn-toggle-plus-minus_active {
+  .kg-btn-toggle-plus-minus__icon {
+    animation-name: show-plus;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes show-plus  {
+  0% {
+    opacity: 1;
+    background-position: bottom center;
+  }
+
+  50% {
+    opacity: 0;
+    transform: rotate(90deg);
+    background-position: bottom center;
+  }
+
+  51% {
+    opacity: 1;
+    background-position: top center;
+  }
+
+  100% {
+    transform: rotate(180deg);
+    background-position: top center;
+  }
+}
+
+@keyframes show-minus  {
+  0% {
+    opacity: 1;
+    background-position: top center;
+  }
+
+  50% {
+    opacity: 0;
+    transform: rotate(-90deg);
+    background-position: top center;
+  }
+
+  51% {
+    opacity: 1;
+    background-position: bottom center;
+  }
+
+  100% {
+    transform: rotate(-180deg);
+    background-position: bottom center;
+  }
+}

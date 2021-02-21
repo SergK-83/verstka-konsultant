@@ -1,0 +1,25 @@
+/*
+====================================
+  kg-nav-tabs
+====================================
+*/
+
+.kg-nav-tabs {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.kg-nav-tabs__item.active {
+  border-bottom: 2px solid $orange !important;
+}
+
+.kg-nav-tabs__btn {
+  padding: 10px 25px !important;
+  border: none !important;
+}
+
+.kg-nav-tabs__item.active .kg-nav-tabs__btn, .kg-nav-tabs__item.active .kg-nav-tabs__btn:hover {
+  background-color: transparent;
+  color: #000 !important;
+}

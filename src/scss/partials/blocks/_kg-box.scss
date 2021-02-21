@@ -1,0 +1,40 @@
+/*
+====================================
+  kg-box
+====================================
+*/
+
+.kg-box {
+  position: relative;
+  padding: 20px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.kg-box__btn-clear-all {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.kg-radio-custom-list .kg-box {
+  padding: 10px 10px 10px 20px;
+}
+
+.kg-box_p-r {
+  padding-right: 50px;
+}
+
+.kg-box__icon-favorites {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+
+.kg-box__icon-portal-evolution {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}

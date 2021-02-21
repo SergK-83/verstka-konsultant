@@ -1,0 +1,37 @@
+{
+  "name": "good",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pngquant": "^1.0.10",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kriukov Sergey",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "bootstrap-sass": "^3.3.7",
+    "bootstrap-slider": "^10.2.3",
+    "inputmask": "^4.0.6",
+    "jquery": "^3.3.1",
+    "textarea-autosize": "^0.4.2"
+  }
+}

@@ -1,0 +1,19 @@
+/*
+====================================
+  kg-block-drop-file
+====================================
+*/
+
+.kg-btn-file-load {
+  display: inline-block;
+  color: #b0b0b0;
+
+  label {
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  input {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+/*
+====================================
+  kg-player
+====================================
+*/
+
+.kg-player {
+  margin-bottom: 10px;
+}
+
+.kg-player__action {
+  font-size: 23px;
+  line-height: 1;
+  color: #c0c0c0;
+}
+
+.kg-player__tools {
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.kg-player__tools-item {
+  color: #cdcdcd;
+  font-size: 11px;
+}
+
+.kg-player__tools-item + .kg-player__tools-item {
+  margin-left: 6px;
+}

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/typeahead/css/typeahead.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+<body class="bg-light-gray">
+
+@@include('_main-header.html')
+
+<main class="main-container">
+    <div class="container">
+        <div class="page-title">
+            <div class="page-title__name">
+                Запросы в органы
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <form class="m-b-30">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="main-search main-search_lg m-b-20">
+                                <input type="text" class="form-control" placeholder="Поиск по теме, описанию ...">
+                                <button class="btn btn-default main-search__btn main-search__btn_no-border"><img src="img/icon/icon-search.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#" class="btn btn-primary btn-block btn-lg fs-12">Создать запрос в орган</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3 col-lg-4">
+                            <div class="form-group">
+                                <select class="kg-select2 form-control">
+                                    <option value="">Орган-1</option>
+                                    <option value="" selected>Налоговая инспекция</option>
+                                    <option value="">Орган-2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-4">
+                            <div class="form-group">
+                                <select class="kg-select2 form-control">
+                                    <option value="">Регион-1</option>
+                                    <option value="" selected>Регион-24</option>
+                                    <option value="">Регион-2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <div class="input-datepicker m-r-20">
+                                    <input type="text" class="datepicker form-control" placeholder="дд.мм.гггг">
+                                    <img class="input-datepicker__icon" src="img/icon/icon-calendar-orange-17x16.png" alt="">
+                                </div>
+                                <div class="input-datepicker">
+                                    <input type="text" class="datepicker form-control" placeholder="дд.мм.гггг">
+                                    <img class="input-datepicker__icon" src="img/icon/icon-calendar-orange-17x16.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="main-block">
+                    <div class="main-block__aside main-block__aside_left">
+                        <div class="kg-box">
+                            <p class="text-center text-muted">Какой-то контент</p>
+                            <div class="text-muted fs-11">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                                В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                            </div>
+                        </div>
+                        <div class="kg-box">
+                            <h6 class="text-center m-t-0">Полезно знать</h6>
+                            <ul class="kg-list ">
+                                <li>
+                                    <a href="#" class="link-underline">КоАП РФ Статья 2.6.2. Административная ответственность собственников.</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-underline">Как правильно купить квартиру. Советы юриста...</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-underline">Учимся правильно продавать недвижимость...</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-underline">КоАП РФ Статья 2.6.2. Административная ответственность собственников.</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-underline">Как правильно купить квартиру. Советы юриста...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-block__aside main-block__aside_right">
+                        <h6 class="text-center f-s"><b>Видео:</b></h6>
+                        <div class="kg-video">
+                            <div class="kg-video-container">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/11GEpAWB-9I" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <a href="https://www.youtube.com/embed/11GEpAWB-9I" target="_blank" class="kg-video__name">Как уйти в отпуск по уходу за ребенком папе?</a>
+                        </div>
+                        <div class="kg-video">
+                            <div class="kg-video-container">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/11GEpAWB-9I" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <a href="https://www.youtube.com/embed/11GEpAWB-9I" target="_blank" class="kg-video__name">Как уйти в отпуск по уходу за ребенком папе?</a>
+                        </div>
+                        <div class="kg-box">
+                            <p class="text-center text-muted">Какой-то контент</p>
+                            <div class="text-muted fs-11">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                            </div>
+                        </div>
+                        <div class="kg-box">
+                            <p class="text-center text-muted">Какой-то контент</p>
+                            <div class="text-muted fs-11">
+                                В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kg-box kg-box_p-r">
+                        <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" data-toggle="tooltip" data-placement="bottom" title="Добавить в избраноое"></span>
+                        <div class="kg-post">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="kg-post__header flex-box justify-cont-between align-items-start">
+                                        <div class="m-r-20">
+                                            <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                            <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                        </div>
+                                        <button class="btn btn-default btn-thin-border btn-sm text-muted" data-toggle="tooltip" data-placement="bottom" title="Скачать запрос">
+                                            <span class="glyphicon glyphicon-download-alt"></span>
+                                        </button>
+                                    </div>
+                                    <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                    <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                    <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                        <div class="text-light fs-10">
+                                            <div>Илья Баев, г. Краснодар</div>
+                                            <div>27 октября, 15.41</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="kg-post__aside-right">
+                                        <div class="thumb-icon m-b-10">
+                                            <div class="flex-box align-items-start">
+                                                <div class="thumb-icon__img" data-toggle="tooltip" data-placement="bottom" title="660000 г.Красноярск ул.Партизана-Железняка 58а">
+                                                    <img src="img/icon/icon-exclamation-sign-circle.png" alt="">
+                                                </div>
+                                                <div class="thumb-icon__info">
+                                                    <div class="thumb-icon__name text-black">
+                                                        <a href="#" class="thumb-icon__name-link">ИФНС</a>
+                                                    </div>
+                                                    <div class="thumb-icon__caption">
+                                                        <span class="text-muted">Краснодар</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-primary btn-sm btn-block fs-11 m-b-10" data-toggle="tooltip" data-placement="bottom" title="Купить все ответы от органа">
+                                            <span class="m-r-10 fs-12">&#8381;</span>
+                                            Купить все 35
+                                        </a>
+                                        <a href="#" class="btn btn-primary-inverse btn-block text-muted fs-11 btn-sm" data-toggle="tooltip" data-placement="bottom" title="Скачать все купленные ответы">
+                                            <span class="glyphicon glyphicon-download-alt m-r-10"></span>
+                                            Скачать все купленные
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-box justify-cont-between fs-11 m-t-30">
+                            <div class="dropdown">
+                                <div class="dropdown-toggle text-uppercase fw-500" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span>Ответы за все время <span class="dropdown__icon-down text-muted"></span></span>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_left fs-11">
+                                    <li><a href="#">Ответы за все время</a></li>
+                                    <li><a href="#">Ответы за неделю</a></li>
+                                    <li><a href="#">Ответы за месяц</a></li>
+                                    <li><a href="#">Ответы за год</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="hr-dashed">
+                        <ul class="kg-list-inline kg-list-inline_files m-t-20">
+                            <li>
+                                <div class="file-attachment file-attachment_box">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites icon-favorites_toggle animation-scale-hover file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Добавить в избранное"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <img src="img/icon/icon-ok-green-17x11.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Вы купили данный ответ">
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-default btn-block text-muted btn-xs file-attachment__btn">
+                                        <span class="glyphicon glyphicon-download-alt m-r-10"></span>
+                                        Скачать
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites icon-favorites_toggle animation-scale-hover file-attachment__icon-favorites icon-favorites_active" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <img src="img/icon/icon-ok-green-17x11.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Вы купили данный ответ">
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-default btn-block text-muted btn-xs file-attachment__btn">
+                                        <span class="glyphicon glyphicon-download-alt m-r-10"></span>
+                                        Скачать
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-attachment file-attachment_box file-attachment_box_sale">
+                                    <div class="file-attachment__tools">
+                                        <div class="flex-inline align-items-center">
+                                            <span class="icon-favorites file-attachment__icon-favorites" data-toggle="tooltip" data-placement="bottom" title="Вы сможете оценить ответ после покупки"></span>
+                                            <span class="text-light fs-10" data-toggle="tooltip" data-placement="bottom" title="18 человек отметили полезным"> 18</span>
+                                        </div>
+                                        <div class="file-attachment__price">
+                                            150
+                                            <span>&#8381;</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="file-attachment__preview">
+                                            <img src="img/document.png" alt="">
+                                        </div>
+                                        <div class="file-attachment__caption">09.2018</div>
+                                    </div>
+                                    <button class="btn btn-primary-inverse btn-block btn-xs file-attachment__btn" data-toggle="tooltip" data-placement="bottom" title="Купить ответ от 09.2018г">
+                                        <span class="m-r-10 fs-12">&#8381;</span>
+                                        Купить
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="text-center"><a href="#" class="text-muted fs-12">Показать ещё</a></div>
+                    </div>
+
+                    <h4 class="text-center m-t-25 m-b-20">Статья юриста</h4>
+                    <div class="subject-card">
+                        <div class="subject-card__section">
+                            <div class="dropdown dropdown_hover dropdown_icon-portal-evolution">
+                                <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                    <div class="dropdown-menu__body">
+                                        <div class="text-center">
+                                            <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                        </div>
+                                        <h4>Участвует в развитии портала</h4>
+                                        <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                        <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-subject">
+                                <a href="#" class="thumb-subject__img">
+                                    <div class="thumb-subject__img-inner-wrap">
+                                        <img src="img/avatar-78x78.png" alt="">
+                                    </div>
+                                    <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                </a>
+                                <a href="#" class="thumb-subject__name">
+                                    <div>Иванов</div>
+                                    <div>Иван Иванович</div>
+                                </a>
+                                <div class="thumb-subject__caption">
+                                    <div>Адвокат / Москва</div>
+                                    <div>14 лет стажа</div>
+                                </div>
+                                <div class="kg-rating-star">
+                                    <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                    <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                </div>
+                                <div class="m-t-10">
+                                    <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                </div>
+                                <div class="dropdown m-t-20">
+                                    <button type="button" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_center">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subject-card__section">
+                            <div class="kg-post">
+                                <p class="kg-post__text">Добрый день!</p>
+                                <p class="kg-post__text">Вам предлагается заключить договор возмездного оказания услуг. В соответствии со ст.779 ГК РФ по договору возмездного оказания услуг исполнитель обязуется по заданию заказчика оказать услуги (совершить определенные действия или осуществить определенную деятельность), а заказчик обязуется оплатить эти услуги. В договоре не расписано какие именно действия будет совершать исполнитель. Формулировка " Поиск покупателя и сопровождение сделки на объект недвижимости" очень общая. Также не урегулирован вопрос, если вы в период действия договора сами найдете покупателя, т.е. как завершается договор, порядок расчетов в данном случае. Не исключаю, что заказчик будет претендовать на свое вознаграждение. </p>
+                                <div class="flex-box justify-cont-between align-items-start m-t-10">
+                                    <div class="text-light fs-10">
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="flex-box justify-cont-between fs-11">
+                                <span>3 прикрепленных файла</span>
+                                <a href="#" class="text-muted">
+                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                    <span class="m-l-10">Скачать все</span>
+                                </a>
+                            </div>
+                            <ul class="kg-list-inline m-t-20">
+                                <li>
+                                    <div class="file-attachment" title="Регистрация.pdf">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light" title="Скачать">
+                                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Регистрация</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="file-attachment">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light" title="Скачать">
+                                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Копия свидетельства</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="file-attachment">
+                                        <div class="flex-box">
+                                            <a href="#" class="file-attachment__preview">
+                                                <img src="img/icon/icon-folder-grey.png" alt="">
+                                            </a>
+                                            <div class="file-attachment__tools">
+                                                <a href="#" class="text-light" title="Скачать">
+                                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="file-attachment__name">
+                                            <span class="file-attachment__name-filename">Заявление на получение супсидии</span>
+                                            <span class="file-attachment__name-filetype">.pdf</span>
+                                        </a>
+                                        <div class="file-attachment__caption">280 КБ</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="kg-box">
+                        <div class="form-group">
+                            <label>Задайте свой вопрос юристам если вы не нашли нужную информацию или задайте свой вопрос в органы</label>
+                            <textarea rows="6" class="form-control" placeholder="Описание"></textarea>
+                            <div class="kg-radio-custom-list fs-11 text-uppercase m-t-20">
+                                <div class="kg-radio-custom kg-radio-custom_active">
+                                    <label>
+                                        <div class="kg-radio-custom__toggle"></div>
+                                        <div class="kg-radio-custom__caption text-primary">
+                                            Задать вопрос юристам
+                                        </div>
+                                        <input type="radio" name="questionVersion" value="" checked>
+                                    </label>
+                                </div>
+                                <div class="kg-radio-custom">
+                                    <label>
+                                        <div class="kg-radio-custom__toggle"></div>
+                                        <div class="kg-radio-custom__caption text-primary">
+                                            Задать вопрос в органы
+                                        </div>
+                                        <input type="radio" name="questionVersion" value="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-right m-t-15">
+                                <button class="btn btn-primary">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="m-t-30">
+
+                    <h4 class="text-center m-t-25 m-b-20">Лучшие юристы портала</h4>
+                    <div class="slider-users">
+                        <div class="slider-users__item">
+                            <div class="subject-card subject-card_hover">
+                                <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                                    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                        <div class="dropdown-menu__body">
+                                            <div class="text-center">
+                                                <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                            </div>
+                                            <h4>Участвует в развитии портала</h4>
+                                            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                                <div class="thumb-subject">
+                                    <a href="#" class="thumb-subject__img">
+                                        <div class="thumb-subject__img-inner-wrap">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </div>
+                                        <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                    </a>
+                                    <a href="#" class="thumb-subject__name">
+                                        <div>Иванов</div>
+                                        <div>Иван Иванович</div>
+                                    </a>
+                                    <div class="thumb-subject__caption">
+                                        <div>Адвокат / Москва</div>
+                                        <div>14 лет стажа</div>
+                                    </div>
+                                    <div class="kg-rating-star">
+                                        <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                        <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle m-t-20">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-users__item">
+                            <div class="subject-card subject-card_hover">
+                                <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                                    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                        <div class="dropdown-menu__body">
+                                            <div class="text-center">
+                                                <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                            </div>
+                                            <h4>Участвует в развитии портала</h4>
+                                            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                                <div class="thumb-subject">
+                                    <a href="#" class="thumb-subject__img">
+                                        <div class="thumb-subject__img-inner-wrap">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </div>
+                                        <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                    </a>
+                                    <a href="#" class="thumb-subject__name">
+                                        <div>Иванов</div>
+                                        <div>Иван Иванович</div>
+                                    </a>
+                                    <div class="thumb-subject__caption">
+                                        <div>Адвокат / Москва</div>
+                                        <div>14 лет стажа</div>
+                                    </div>
+                                    <div class="kg-rating-star">
+                                        <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                        <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle m-t-20">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-users__item">
+                            <div class="subject-card subject-card_hover">
+                                <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                                    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                        <div class="dropdown-menu__body">
+                                            <div class="text-center">
+                                                <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                            </div>
+                                            <h4>Участвует в развитии портала</h4>
+                                            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                                <div class="thumb-subject">
+                                    <a href="#" class="thumb-subject__img">
+                                        <div class="thumb-subject__img-inner-wrap">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </div>
+                                        <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                    </a>
+                                    <a href="#" class="thumb-subject__name">
+                                        <div>Иванов</div>
+                                        <div>Иван Иванович</div>
+                                    </a>
+                                    <div class="thumb-subject__caption">
+                                        <div>Адвокат / Москва</div>
+                                        <div>14 лет стажа</div>
+                                    </div>
+                                    <div class="kg-rating-star">
+                                        <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                        <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle m-t-20">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-users__item">
+                            <div class="subject-card subject-card_hover">
+                                <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                                    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                        <div class="dropdown-menu__body">
+                                            <div class="text-center">
+                                                <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                            </div>
+                                            <h4>Участвует в развитии портала</h4>
+                                            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                                <div class="thumb-subject">
+                                    <a href="#" class="thumb-subject__img">
+                                        <div class="thumb-subject__img-inner-wrap">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </div>
+                                        <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                    </a>
+                                    <a href="#" class="thumb-subject__name">
+                                        <div>Иванов</div>
+                                        <div>Иван Иванович</div>
+                                    </a>
+                                    <div class="thumb-subject__caption">
+                                        <div>Адвокат / Москва</div>
+                                        <div>14 лет стажа</div>
+                                    </div>
+                                    <div class="kg-rating-star">
+                                        <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                        <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle m-t-20">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-users__item">
+                            <div class="subject-card subject-card_hover">
+                                <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                                    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                        <div class="dropdown-menu__body">
+                                            <div class="text-center">
+                                                <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                            </div>
+                                            <h4>Участвует в развитии портала</h4>
+                                            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                                <div class="thumb-subject">
+                                    <a href="#" class="thumb-subject__img">
+                                        <div class="thumb-subject__img-inner-wrap">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </div>
+                                        <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                    </a>
+                                    <a href="#" class="thumb-subject__name">
+                                        <div>Иванов</div>
+                                        <div>Иван Иванович</div>
+                                    </a>
+                                    <div class="thumb-subject__caption">
+                                        <div>Адвокат / Москва</div>
+                                        <div>14 лет стажа</div>
+                                    </div>
+                                    <div class="kg-rating-star">
+                                        <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                        <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle m-t-20">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-users__item">
+                            <div class="subject-card subject-card_hover">
+                                <div class="dropdown dropdown_hover dropdown_icon-portal-evolution kg-box__icon-portal-evolution">
+                                    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+                                    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+                                        <div class="dropdown-menu__body">
+                                            <div class="text-center">
+                                                <img src="img/icon/icon-like-green-44x40.png" alt="">
+                                            </div>
+                                            <h4>Участвует в развитии портала</h4>
+                                            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+                                            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                                <div class="thumb-subject">
+                                    <a href="#" class="thumb-subject__img">
+                                        <div class="thumb-subject__img-inner-wrap">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </div>
+                                        <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                                    </a>
+                                    <a href="#" class="thumb-subject__name">
+                                        <div>Иванов</div>
+                                        <div>Иван Иванович</div>
+                                    </a>
+                                    <div class="thumb-subject__caption">
+                                        <div>Адвокат / Москва</div>
+                                        <div>14 лет стажа</div>
+                                    </div>
+                                    <div class="kg-rating-star">
+                                        <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                        <div class="kg-rating-star__caption">Рейтинг: 7</div>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <a href="#" class="fs-12"><u>130 отзывов</u></a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle m-t-20">
+                                        Услуги
+                                        <span class="kg-btn-dropdown-toggle__icon">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kg-box">
+                        <h4 class="text-center m-b-30">Похожие обращения</h4>
+                        <ul class="kg-list">
+                            <li>
+                                <a href="#" class="link-underline">Товарищеское соглашение или договор инвестирования...</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-underline">Финансовые гарантии арендодателя...</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-underline">Возможно ли отсудить транспортное средство...</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-underline">Товарищеское соглашение или договор инвестирования...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('_main-footer.html')
+
+<script src="js/libs.min.js"></script>
+<script src="libs/typeahead/js/typeahead.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

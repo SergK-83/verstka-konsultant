@@ -1,0 +1,37 @@
+/*
+====================================
+  btn-clear-all
+====================================
+*/
+
+.btn-clear-all {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 34px;
+  background: transparent;
+  padding: 0;
+  margin-left: 8px;
+  color: #a7a7a7;
+  border: none;
+  border-radius: 0;
+  border-left: 1px solid #ddd;
+  line-height: 1;
+  font-size: 21px;
+
+  &:after {
+    content: '\2715';
+    display: inline-block;
+  }
+}
+
+.btn-clear-all_xs {
+  width: 15px;
+  height: 15px;
+  font-size: 11px;
+}
+
+.form-group-sm .btn-clear-all {
+  height: 30px;
+}

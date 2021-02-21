@@ -1,0 +1,84 @@
+/*
+====================================
+  panel-group
+====================================
+*/
+
+.panel-group > .panel {
+  border: none !important;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) !important;
+  background-color: #fff;
+}
+
+.panel-group > .panel-default>.panel-heading {
+  padding: 0;
+  background-color: transparent;
+}
+
+.panel-group > .panel > .panel-heading > .panel-title> a {
+  display: block;
+  position: relative;
+  padding: 21px 50px 21px 77px;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #f4f4f4;
+}
+
+.panel-group > .panel > .panel-heading > .panel-title> a.collapsed {
+  background: transparent;
+}
+
+.panel-group > .panel > .panel-heading > .panel-title> a:hover {
+  background-color: #f4f4f4;
+}
+
+.panel-group > .panel > .panel-heading > .panel-title> a:focus {
+  color: #000;
+}
+
+.panel-group .panel-heading__img {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 7px;
+  left: 12px;
+}
+
+.panel__icon-toggle {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  transition: .2s ease-in-out;
+}
+
+.collapsed .panel__icon-toggle {
+  transform: rotate(-180deg);
+  transition: .2s ease-in-out;
+}
+
+.panel-group .panel-body {
+  border-top: none !important;
+}
+
+.panel-group .panel+.panel {
+  margin-top: 10px;
+}
+
+.panel-group_categories-list {
+
+  .panel-body {
+    padding: 10px 15px 25px 77px;
+  }
+
+  .panel-body > ul > li > a {
+    display: block;
+    padding: 3px 0;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .panel-body > ul > li > a:hover {
+    color: $orange;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,148 @@
+/*
+====================================
+  chat-box
+====================================
+*/
+
+.chat-box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.chat-box__body {
+  padding: 20px 30px;
+}
+
+.chat-box__date {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.chat-box__msg-list {
+  margin-bottom: 20px;
+}
+
+.chat-box__msg {
+  display: flex;
+}
+
+.chat-box__msg + .chat-box__msg {
+  margin-top: 20px;
+}
+
+.chat-box__msg_in {
+  justify-content: flex-start;
+  padding-right: 30px;
+}
+
+.chat-box__msg_out {
+  justify-content: flex-end;
+  padding-left: 30px;
+}
+
+.chat-box__msg_in + .chat-box__msg_in,
+.chat-box__msg_out + .chat-box__msg_out {
+  margin-top: 8px;
+}
+
+.chat-box__msg-content {
+  position: relative;
+  display: inline-flex;
+  padding: 9px 10px 6px 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.chat-box__msg-angle {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 15px;
+  height: 10px;
+  margin: auto;
+  top: -1px;
+  left: -7px;
+  border: 1px solid #ddd;
+  border-width: 1px 0 0 1px;
+  transform: rotate(0deg) skewX(47deg);
+  z-index: 5;
+}
+
+.chat-box__msg_in .chat-box__msg-angle {
+  top: -1px;
+  left: -7px;
+}
+
+.chat-box__msg_out .chat-box__msg-angle {
+  top: -1px;
+  left: calc(100% - 8px);
+  transform: rotate(0deg) skew(-47deg);
+  border-width: 1px 1px 0 0;
+}
+
+.chat-box .thumb-icon__img-mark {
+  color: #6f93b7;
+}
+
+.chat-box__title {
+  margin-bottom: 4px;
+  color: #6f93b7;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.chat-box__msg-body {
+  margin-bottom: 5px;
+}
+
+.chat-box__msg-text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.chat-box__msg-info {
+  margin-left: 20px;
+  font-size: 10px;
+  color: #b6b5b5;
+  font-weight: 500;
+}
+
+.chat-box__msg-footer {
+  font-size: 10px;
+  color: #898989;
+}
+
+.chat-box__msg-final {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px dashed #ff662e;
+}
+
+.chat-box__msg_in.chat-box__msg-final {
+  padding-left: 20px;
+}
+
+.chat-box__msg_out.chat-box__msg-final {
+  padding-right: 20px;
+}
+
+.chat-box__msg-final:before {
+  content: 'Финальный ответ';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: $orange;
+  font-size: 12px;
+  text-transform: uppercase;
+}

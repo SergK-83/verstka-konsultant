@@ -1,0 +1,38 @@
+/*
+====================================
+  kg-post
+====================================
+*/
+
+.kg-post__title {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: $orange;
+  line-height: 1.2;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.kg-post__text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.kg-post hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.kg-post__header {
+  margin-bottom: 10px;
+
+  .kg-post__title {
+    margin-bottom: 0;
+  }
+}
+
+.kg-post__aside-right {
+  padding: 10px 0 10px 20px;
+  border-left: 1px solid #ccc;
+}

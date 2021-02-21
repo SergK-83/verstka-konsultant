@@ -1,0 +1,62 @@
+/* Roboto */
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoLight.eot");
+    src: url("roboto/RobotoLight.woff"),
+    url("roboto/RobotoLight.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoRegular.eot");
+    src: url("roboto/RobotoRegular.woff"),
+    url("roboto/RobotoRegular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoMedium.eot");
+    src: url("roboto/RobotoMedium.woff"),
+    url("roboto/RobotoMedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoBold.eot");
+    src: url("roboto/RobotoBold.woff"),
+    url("roboto/RobotoBold.ttf");
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoBlack.eot");
+    src: url("roboto/RobotoBlack.woff"),
+    url("roboto/RobotoBlack.ttf");
+    font-weight: 900;
+}
+
+/* OpenSans */
+
+@font-face {
+    font-family: OpenSans;
+    src: url("OpenSans/OpenSans-Bold.eot");
+    src: url("OpenSans/OpenSans-Bold.woff"),
+    url("OpenSans/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+/* HelveticaNeueCyr */
+
+@font-face {
+    font-family: HelveticaNeueCyr;
+    src: url("HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot");
+    src: url("HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff"),
+    url("HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf");
+    font-weight: 400;
+}

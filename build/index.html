@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/typeahead/css/typeahead.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+</head>
+<body class="landing-page bg-gray">
+
+<header id="mainHeader" class="main-header main-header_fixed-top">
+    <button type="button" id="mainHeaderToggle" class="main-header__toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="main-header__top">
+        <div class="container">
+            <div class="main-header__top-inner-wrap">
+                <div class="main-header__top-menu">
+                    <ul class="nav nav-pills">
+                        <li role="presentation"><a href="#" class="link-disabled" title="Находится в разработке">Оплата</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Компаниям</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Инвесторам</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">О проекте</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">История</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Услуги</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Юристы</a></li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation">
+                            <a href="#modalLocation" class="location" data-toggle="modal">
+                                <span class="text-primary"><u>Москва</u> <span class="dropdown__icon-down"></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="dropdown main-header__user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div class="flex-box align-items-center text-white">
+                                    <div>
+                                        <div class="main-header__user-title">Константин Константинович</div>
+                                        <div class="main-header__user-caption">Юрист</div>
+                                    </div>
+                                    <span class="dropdown__icon-down"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header__bottom">
+        <div class="container">
+            <div class="main-header__bottom-inner-wrap">
+                <div class="main-header__logo dropdown">
+    <img src="img/logo-109x106.png" alt="" class="dropdown-toggle" data-toggle="dropdown">
+    <ul class="dropdown-menu fs-11">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="authorization.html">Вход / Регистрация</a></li>
+        <li><a href="lawyer-list.html">Консультация в чате</a></li>
+        <li><a href="request-to-organ.html">Запрос в орган</a></li>
+        <li><a href="list-request-to-organs.html">Список запросов в органы</a></li>
+        <li><a href="question.html">Вопрос</a></li>
+        <li><a href="questions.html">Список вопросов</a></li>
+        <li><a href="modal-client-lawyer.html">Modal - Клиент/Юрист</a></li>
+        <li><a href="user-profile.html">Просмотр профиля пользователя</a></li>
+        <li><a href="lawyer-profile.html">Профиль Юриста</a></li>
+        <li><a href="lawyer-profile-view-lawyer.html">Профиль Юриста - взгляд Юриста</a></li>
+        <li><a href="lawyer-profile-editing.html">Профиль Юриста - Редактирование</a></li>
+    </ul>
+</div>
+
+                <div class="main-search main-search_disabled" title="Функционал находится в разработке">
+    <input type="text" class="form-control" placeholder="Поиск ...">
+    <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+</div>
+                <ul class="nav nav-pills">
+                    <li role="presentation">
+                        <a href="questions.html">Вопросы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать вопрос"></span></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Заказать документ</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="lawyer-list.html">Консультация в чате</a></li>
+                    <li role="presentation"><a href="phone-advice.html">Телефонная консультация</a></li>
+                    <li role="presentation">
+                        <a href="list-request-to-organs.html">Запросы в органы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать запрос"></span></a>
+                    </li>
+                    <li role="presentation"><a href="meetings.html">Встречa с юристом</a></li>
+                    <li role="presentation">
+                        <a href="#" class="link-disabled" title="Находится в разработке">Создать дело</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kg-desktop main-header__kg-desktop">
+    <div class="kg-desktop__menu">
+        <div class="kg-desktop__menu-inner-wrap">
+            <div class="kg-desktop__menu-avatar" style="display:none;">
+                <a href="#" title="Владимир Владимирович">
+                    <img src="img/avatar.png" class="kg-desktop__menu-avatar-img" alt="">
+                    <div class="kg-desktop__menu-avatar-caption">Владимир</div>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="authorization.html" class="btn btn-primary-inverse kg-desktop__menu-btn-login" title="Авторизация">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                </a>
+            </div>
+            <ul class="kg-desktop__tab-list">
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopNotice" data-toggle="tab" title="Уведомления">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_notice"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item kg-desktop__tab-item_disabled">
+                    <a href="#desktopDialog" data-toggle="tab" title="Чат в разработке">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_dialog"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopQuestion" data-toggle="tab" title="Вопросы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_question">
+                            <span class="kg-desktop__tab-notice" title="Новые уведомления"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopDocs" data-toggle="tab" title="Документы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_docs"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopPhoneAdvice" data-toggle="tab" title="Телефонные консультации">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_phone"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopOrganReport" data-toggle="tab" title="Ответы от органов">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_organ"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopDeal" data-toggle="tab" title="Услуги">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_deal"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopMeet" data-toggle="tab" title="Встречи">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_meet"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopMoney" data-toggle="tab" title="Финансы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_money"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopFavorites" data-toggle="tab" title="Избранное">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_favorites"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</header>
+
+<div class="main-banner">
+    <div class="container">
+        <div class="main-banner__body">
+            <h1>Лучший сервис юридических услуг</h1>
+            <div class="main-banner__card main-banner__card_first">
+                <div class="main-banner__card_title">Что видит обычный пользователь?</div>
+                <ul>
+                    <li>Задать вопрос</li>
+                    <li>Заказать документ</li>
+                    <li>Консультация в чате</li>
+                    <li>Телефонная консультация</li>
+                    <li>Запрос в орган</li>
+                    <li>Встречи</li>
+                    <li>Создать дело</li>
+                </ul>
+            </div>
+            <div class="main-banner__card main-banner__card_second">
+                <div class="main-banner__card_blur"></div>
+                <div class="main-banner__card_title">Что такое Konsultant.ru на самом деле?</div>
+                <ul>
+                    <li>Защита от мошенников</li>
+                    <li>Только реальные отзывы</li>
+                    <li>Гарантия возврата денег</li>
+                    <li>Напишите свой запрос в орган или скачайте готовые ответы</li>
+                    <li>Наши юристы - настоящие</li>
+                    <li>Подберем юриста в вашем городе</li>
+                </ul>
+            </div>
+            <div class="soc-net">
+                <a href="#" class="soc-net__item soc-net__item_fb animation-scale-hover"></a>
+                <a href="#" class="soc-net__item soc-net__item_twitter animation-scale-hover"></a>
+                <a href="#" class="soc-net__item soc-net__item_vk animation-scale-hover"></a>
+                <a href="#" class="soc-net__item soc-net__item_youtube animation-scale-hover"></a>
+                <a href="#" class="soc-net__item soc-net__item_inst animation-scale-hover"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-slider-wrap">
+    <div class="container">
+        <div class="main-slider">
+            <div class="main-slider__banner main-slider__banner_1">
+                <h2 class="main-slider__banner-title">Несколько способов юридической консультации</h2>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <img src="img/laptop.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="main-slider__caption">
+                            <h4 class="main-slider__caption-title">Консультация в чате</h4>
+                            <p>Получите консультацию юриста в чате в личном кабинете. Ваша переписка будет полностью
+                                конфиденциальной и её не увидят сторонние пользователи. Общайтесь на интересующие Вас
+                                темы с несколькими юристами одновременно!</p>
+                            <a href="#" class="btn btn-primary">Написать в чат</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__banner main-slider__banner_2">
+                <h2 class="main-slider__banner-title">Получите квалифицированную помощь</h2>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <img src="img/laptop.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="main-slider__caption">
+                            <h4 class="main-slider__caption-title">Вопросы и ответы</h4>
+                            <p>Задавайте вопросы юристу. Ваша переписка будет полностью конфиденциальной и её не увидят
+                                сторонние пользователи.</p>
+                            <a href="#" class="btn btn-primary">Задать вопрос</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__banner main-slider__banner_3">
+                <h2 class="main-slider__banner-title text-white">Предупрежден - вооружен !</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="landing-section landing-section_apps">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h4>Получайте юридическую помощь через приложение в Вашем смартфоне</h4>
+                        <p class="landing-section__thumb-desc">Скачайте наше приложение Konsultant и пользуйтесь услугами наших юристов в своем смартфоне!</p>
+                        <a href="#" class="btn p-0 m-r-20 animation-opacity-hover"><img src="img/app-store.png" alt=""></a>
+                        <a href="#" class="btn p-0 animation-opacity-hover"><img src="img/google-play.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/mobile-hand.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-section_categories bg-white">
+    <div class="container">
+        <div class="landing-section__header">
+            <h3 class="landing-section__header-title">Популярные категории</h3>
+        </div>
+        <div class="panel-group panel-group_categories-list" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_1"
+                           aria-expanded="true" aria-controls="collapse_1">
+                            Гражданское право
+                            <div class="panel__icon-toggle">
+                                <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="#">Регистрация бизнеса</a></li>
+                            <li><a href="#">Договорное право</a></li>
+                            <li><a href="#">Право собственности</a></li>
+                            <li><a href="#">Взыскание задолженности</a></li>
+                            <li><a href="#">Кредитование</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapse_2">
+                            Конституционное право
+                            <span class="panel__icon-toggle">
+                                    <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                                </span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse_2" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="#">Регистрация бизнеса</a></li>
+                            <li><a href="#">Договорное право</a></li>
+                            <li><a href="#">Право собственности</a></li>
+                            <li><a href="#">Взыскание задолженности</a></li>
+                            <li><a href="#">Кредитование</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapse_3">
+                            Защита прав потребителей
+                            <span class="panel__icon-toggle">
+                                    <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                                </span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse_3" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="#">Регистрация бизнеса</a></li>
+                            <li><a href="#">Договорное право</a></li>
+                            <li><a href="#">Право собственности</a></li>
+                            <li><a href="#">Взыскание задолженности</a></li>
+                            <li><a href="#">Кредитование</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapse_4">
+                            Административное право
+                            <span class="panel__icon-toggle">
+                                    <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                                </span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse_4" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="#">Регистрация бизнеса</a></li>
+                            <li><a href="#">Договорное право</a></li>
+                            <li><a href="#">Право собственности</a></li>
+                            <li><a href="#">Взыскание задолженности</a></li>
+                            <li><a href="#">Кредитование</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapse_5">
+                            Автомобильное право
+                            <span class="panel__icon-toggle">
+                                    <img src="img/icon/icon-menu_up-18x10.png" alt="">
+                                </span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse_5" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="#">Регистрация бизнеса</a></li>
+                            <li><a href="#">Договорное право</a></li>
+                            <li><a href="#">Право собственности</a></li>
+                            <li><a href="#">Взыскание задолженности</a></li>
+                            <li><a href="#">Кредитование</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn btn-primary btn-lg landing-section__btn">Показать все</a>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-section_lawyers bg-white">
+    <div class="container">
+        <div class="landing-section__header">
+            <h3 class="landing-section__header-title">Лучшие юристы портала</h3>
+            <p class="landing-section__narrow-block">Рейтинг составлен на основе оценок клиентов, любой
+                зарегистрированный пользователь сайта может легко принять в нём участие.</p>
+        </div>
+        <form class="m-b-30">
+            <div class="main-search main-search_lg m-b-20">
+                <input type="text" class="form-control" placeholder="Поиск ...">
+                <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-md-push-4">
+                    <div class="form-inline fs-12 m-b-20">
+                        <div class="form-group">
+                            <label class="m-r-5">Цена: от</label>
+                            <input type="text" class="form-control m-r-5" size="6" value="500">
+                        </div>
+                        <div class="form-group">
+                            <label class="m-r-5">до</label>
+                            <input type="text" class="form-control m-r-5" size="6" value="1000">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-4 col-md-push-4">
+                    <div class="form-group">
+                        <select class="kg-select2 form-control">
+                            <option class="select2-option-level-1" value="">Категория права</option>
+                            <option class="select2-option-level-2" value="" selected>Гражданское право</option>
+                            <option class="select2-option-level-2" value="">Другое право</option>
+                            <option class="select2-option-level-2" value="">Иное право</option>
+                            <option class="select2-option-level-1" value="">Категория права-2</option>
+                            <option class="select2-option-level-2" value="">Подкатегория-1</option>
+                            <option class="select2-option-level-2" value="">Подкатегория-2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-pull-8">
+                    <div class="main-search m-b-10">
+                        <input type="text" class="form-control" placeholder="Города">
+                        <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-box align-items-start add-block-list">
+                <div class="add-block-list__content">
+                    <div class="label-sticker add-block">
+                        <div class="label-sticker__name">Москва</div>
+                        <span class="label-sticker__close label-sticker__close_big"></span>
+                    </div>
+                    <div class="label-sticker add-block">
+                        <div class="label-sticker__name">Александровск-Сахалинский</div>
+                        <span class="label-sticker__close label-sticker__close_big"></span>
+                    </div>
+                    <div class="label-sticker add-block">
+                        <div class="label-sticker__name">Тюмень</div>
+                        <span class="label-sticker__close label-sticker__close_big"></span>
+                    </div>
+                </div>
+                <button class="btn btn-clear-all action-remove-all" type="button"></button>
+            </div>
+            <ul class="kg-list-inline fs-11 m-t-10">
+                <li>
+                    <div class="checkbox checkbox-custom active">
+                        <label>
+                <span class="checkbox-custom__toggle">
+                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                </span>
+                            <input type="checkbox" checked="">
+                            <span class="checkbox-custom__caption">Показывать только участвующих в развитии проекта</span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox checkbox-custom active">
+                        <label>
+                <span class="checkbox-custom__toggle">
+                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                </span>
+                            <input type="checkbox" checked="">
+                            <span class="checkbox-custom__caption">Показывать готовых для звонка</span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox checkbox-custom active">
+                        <label>
+                <span class="checkbox-custom__toggle">
+                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                </span>
+                            <input type="checkbox" checked="">
+                            <span class="checkbox-custom__caption">Показывать только Online</span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <div class="subject-card subject-card_p-r subject-card_hover">
+    <div class="subject-card__section">
+        <div class="dropdown dropdown_hover dropdown_icon-portal-evolution">
+    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+        <div class="dropdown-menu__body">
+            <div class="text-center">
+                <img src="img/icon/icon-like-green-44x40.png" alt="">
+            </div>
+            <h4>Участвует в развитии портала</h4>
+            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+        </div>
+    </div>
+</div>
+        <div class="thumb-subject">
+            <a href="#" class="thumb-subject__img">
+                <div class="thumb-subject__img-inner-wrap">
+                    <img src="img/avatar-78x78.png" alt="">
+                </div>
+                <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+            </a>
+            <a href="#" class="thumb-subject__name">
+                <div>Иванов</div>
+                <div>Иван Иванович</div>
+            </a>
+            <div class="thumb-subject__caption">
+                <div>Адвокат / Москва</div>
+                <div>14 лет стажа</div>
+            </div>
+            <div class="kg-rating-star">
+                <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                <div class="kg-rating-star__caption">Рейтинг: 7</div>
+            </div>
+            <div class="m-t-10">
+                <a href="#" class="fs-12"><u>130 отзывов</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="subject-card__section">
+        <h6 class="text-primary fs-13 m-t-5">Специализации:</h6>
+        <ul class="kg-stylized-list">
+            <li>
+                <h6>Гражданское право</h6>
+                <ul>
+                    <li><a href="#">Право собственности</a></li>
+                    <li><a href="#">Взыскание задолженности</a></li>
+                </ul>
+            </li>
+            <li>
+                <h6>Автомобильное право</h6>
+                <ul>
+                    <li><a href="#">ДТП, ГИБДД, ПДД</a></li>
+                    <li><a href="#">Лишение водительских прав</a></li>
+                </ul>
+            </li>
+            <li>
+                <h6>Семейное право</h6>
+                <ul>
+                    <li><a href="#">Заключение и расторжение брака</a></li>
+                    <li><a href="#">Алименты</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p class="m-t-10 fs-13 text-muted">От 1000 рублей</p>
+    </div>
+    <div class="subject-card__section">
+        <div class="kg-video-container">
+            <div class="kg-video-container__play">
+                <img src="img/icon/icon-play-red-47x47.png" alt="">
+            </div>
+        </div>
+        <div class="dropdown m-t-30">
+            <button type="button" class="btn btn-primary btn-block kg-btn-dropdown-toggle fs-13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Написать
+                <span class="kg-btn-dropdown-toggle__icon">
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <span class="icon-favorites icon-favorites_toggle subject-card__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+    </div>
+</div>
+        <div class="subject-card subject-card_p-r subject-card_hover">
+    <div class="subject-card__section">
+        <div class="dropdown dropdown_hover dropdown_icon-portal-evolution">
+    <div class="dropdown-toggle icon-portal-evolution animation-scale-hover"></div>
+    <div class="dropdown-menu dropdown-menu_custom dropdown-menu_left">
+        <div class="dropdown-menu__body">
+            <div class="text-center">
+                <img src="img/icon/icon-like-green-44x40.png" alt="">
+            </div>
+            <h4>Участвует в развитии портала</h4>
+            <p class="fs-11 m-b-15">Служба контроля качества регулярно проверяет объявления данного юриста</p>
+            <a href="#" class="btn btn-primary-inverse btn-sm fs-11">Подробнее</a>
+        </div>
+    </div>
+</div>
+        <div class="thumb-subject">
+            <a href="#" class="thumb-subject__img">
+                <div class="thumb-subject__img-inner-wrap">
+                    <img src="img/avatar-78x78.png" alt="">
+                </div>
+                <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+            </a>
+            <a href="#" class="thumb-subject__name">
+                <div>Иванов</div>
+                <div>Иван Иванович</div>
+            </a>
+            <div class="thumb-subject__caption">
+                <div>Адвокат / Москва</div>
+                <div>14 лет стажа</div>
+            </div>
+            <div class="kg-rating-star">
+                <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                <div class="kg-rating-star__caption">Рейтинг: 7</div>
+            </div>
+            <div class="m-t-10">
+                <a href="#" class="fs-12"><u>130 отзывов</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="subject-card__section">
+        <h6 class="text-primary fs-13 m-t-5">Специализации:</h6>
+        <ul class="kg-stylized-list">
+            <li>
+                <h6>Гражданское право</h6>
+                <ul>
+                    <li><a href="#">Право собственности</a></li>
+                    <li><a href="#">Взыскание задолженности</a></li>
+                </ul>
+            </li>
+            <li>
+                <h6>Автомобильное право</h6>
+                <ul>
+                    <li><a href="#">ДТП, ГИБДД, ПДД</a></li>
+                    <li><a href="#">Лишение водительских прав</a></li>
+                </ul>
+            </li>
+            <li>
+                <h6>Семейное право</h6>
+                <ul>
+                    <li><a href="#">Заключение и расторжение брака</a></li>
+                    <li><a href="#">Алименты</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p class="m-t-10 fs-13 text-muted">От 1000 рублей</p>
+    </div>
+    <div class="subject-card__section">
+        <div class="kg-video-container">
+            <div class="kg-video-container__play">
+                <img src="img/icon/icon-play-red-47x47.png" alt="">
+            </div>
+        </div>
+        <div class="dropdown m-t-30">
+            <button type="button" class="btn btn-primary btn-block kg-btn-dropdown-toggle fs-13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Написать
+                <span class="kg-btn-dropdown-toggle__icon">
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <span class="icon-favorites icon-favorites_toggle subject-card__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+    </div>
+</div>
+        <div class="text-center">
+            <a href="#" class="btn btn-primary btn-lg landing-section__btn">Показать еще</a>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section bg-white">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/certificate-270x270.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Мы защищаем Вас</h3>
+                        <p class="landing-section__thumb-desc">
+                            Мы обеспечиваем защиту при ведении дел и возвращаем полную сумму денег, если Вам не оказали качественную юридическую консультацию. Так же полная верификация данных, что ограничит Вас от общения с мошенниками!
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Все данные конфиденциальны</h3>
+                        <p class="landing-section__thumb-desc">
+                            Мы гарантируем, что Ваши данные никуда не утекут и не пропаду. Мы не передаем информацию о своих пользователях третьим лицам!
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/server-270x269.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section bg-white">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/laptop-mobile.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Самый удобный интерфейс</h3>
+                        <p class="landing-section__thumb-desc">
+                            На нашем портале очень удобный интерфейс, в котором вы запросто разберетесь и найдёте нужную Вам услугу, как в полной версии сайта, так и на мобильном устройстве!
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Войти в личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Работаем по всей РФ</h3>
+                        <p class="landing-section__thumb-desc">
+                            Вы можете находится в любом городе РФ и получить консультацию юриста. Для этого нужен всего лишь интернет! А если вы хотите найти юриста в своем городе, то воспользуйтесь поиском юристов по городу
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Найти юриста</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/map-black-placemarker.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section bg-white">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/tablet.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Более 1000 ответов в день!</h3>
+                        <p class="landing-section__thumb-desc">
+                            Наши юристы обрабатывают более 1000 новых заявок в день и помогают Вам решить юридический вопрос любой сложности!
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Рейтинг юристов</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-section_reviews">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Только реальные отзывы</h3>
+                        <p class="landing-section__thumb-desc">
+                            На нашем сайте размещены только реальные отзывы от наших клиентов, которые получили юридическую консультацию благодарю порталу Konsultant.ru
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Найти юриста</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/mobile2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section bg-white">
+    <div class="container">
+        <div class="landing-section__thumb">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner">
+                        <img src="img/laptop.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Нужен юрист в суд?</h3>
+                        <p class="landing-section__thumb-desc">
+                            На нашем портале вы можете найти юриста, который будет представлять Ваши интересы в суде. Создайте дело и наши юристы откликнутся на него, чтобы защищать Ваши интересы или проконсультировать
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg landing-section__btn">Смотреть отзывы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section bg-white">
+    <div class="container">
+        <div class="landing-section__thumb landing-section__thumb_card">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-caption">
+                        <h3>Любой, удобный способ оплаты</h3>
+                        <p class="landing-section__thumb-desc">
+                            Вы можете пополнить баланс личного кабинета с помощью любого, удобного для вас способа
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="landing-section__thumb-banner landing-section__thumb-banner_list">
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-visa.png" alt="">
+                        </div>
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-mastercard.png" alt="">
+                        </div>
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-yandex-money.png" alt="">
+                        </div>
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-sberbank-online.png" alt="">
+                        </div>
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-qiwi.png" alt="">
+                        </div>
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-paypal.png" alt="">
+                        </div>
+                        <div class="landing-section__thumb-banner-item">
+                            <img src="img/logo-webmoney.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-section_partners">
+    <div class="container">
+        <div class="landing-section__header">
+            <h3 class="landing-section__header-title">Наши партнеры</h3>
+        </div>
+        <ul class="kg-list-inline">
+            <li><img src="img/logo-hh.png" alt=""></li>
+            <li><img src="img/logo-genprokuratura.png" alt=""></li>
+            <li><img src="img/logo-garantru.png" alt=""></li>
+            <li><img src="img/logo-mail-group.png" alt=""></li>
+        </ul>
+    </div>
+</section>
+
+<section class="landing-section landing-section_mass-media bg-white">
+    <div class="container">
+        <div class="landing-section__header">
+            <h3 class="landing-section__header-title">СМИ о нас</h3>
+        </div>
+        <ul class="kg-list-inline">
+            <li>
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/logo-gazetaru.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Самый лучший портал 2018 году это точно!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/logo-russia-today.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Самый лучший портал 2018 году это точно!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/logo-rbk.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Самый лучший портал 2018 году это точно!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/logo-kommersant.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Самый лучший портал 2018 году это точно!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/logo-izru.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Самый лучший портал 2018 году это точно!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="thumb-icon">
+                    <div class="thumb-icon__img">
+                        <img src="img/logo-life-news.png" alt="">
+                    </div>
+                    <div class="thumb-icon__info">
+                        Самый лучший портал 2018 году это точно!
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="main-footer__aside">
+                    <div class="main-footer__logo">
+                        <img src="img/logo-109x106.png" alt="">
+                    </div>
+                    <div class="soc-net main-footer__soc-net">
+                        <a href="#" class="soc-net__item soc-net__item_fb animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_twitter animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_vk animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_youtube animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_inst animation-scale-hover"></a>
+                    </div>
+                    <div class="fs-10 text-light">© 2018 KonsultantRU</div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="main-footer__menu">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">О компании</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">Инвесторам</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">Развитие портала</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- scroll up -->
+<div id="scrollup" class="scrollup-wrap">
+    <div class="scrollup">
+        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+    </div>
+</div>
+
+<!-- modal выбор города -->
+<div id="modalLocation" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">Укажите ваш город</h5>
+            </div>
+            <div class="modal-body">
+                <div id="the-basics">
+                    <input class="form-control typeahead" type="text" placeholder="Укажите ваш город" value="Москва">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-sm btn-primary">Применить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="libs/typeahead/js/typeahead.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

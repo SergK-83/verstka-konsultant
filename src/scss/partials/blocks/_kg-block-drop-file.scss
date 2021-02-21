@@ -1,0 +1,47 @@
+/*
+====================================
+  kg-block-drop-file
+====================================
+*/
+
+.kg-block-drop-file {
+  background: #f5f5f5;
+  border: 2px solid #e1e1e1;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.kg-block-drop-file__container {
+  border: 2px dashed #e1e1e1;
+  border-radius: 4px;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.kg-block-drop-file__caption {
+  font-size: 12px;
+  color: #b6b5b5;
+}
+
+.kg-block-drop-file_xs {
+  padding: 5px;
+  border-width: 1px;
+
+  .kg-block-drop-file__container {
+    padding: 15px 25px;
+  }
+
+  .kg-block-drop-file__caption {
+    font-size: 11px;
+  }
+}
+
+.kg-block-drop-file .kg-drop-area__container {
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 3px;
+}

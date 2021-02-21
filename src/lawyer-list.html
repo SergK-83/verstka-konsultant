@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/typeahead/css/typeahead.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+</head>
+<body class="bg-light-gray">
+
+@@include('_main-header.html')
+
+<main class="main-container">
+    <div class="container">
+        <div class="page-title">
+            <div class="page-title__name">
+                Консультация в чате
+            </div>
+            <div class="page-title__caption">
+                Рейтинг составлен на основе оценок клиентов, любой зарегистрированный пользователь сайта может легко принять в нём участие.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <form class="m-b-30">
+                    <div class="main-search main-search_lg m-b-20">
+                        <input type="text" class="form-control" placeholder="Поиск ...">
+                        <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 col-lg-push-4">
+                            <div class="form-inline fs-12 m-b-20">
+                                <div class="form-group">
+                                    <label class="m-r-5">Цена: от</label>
+                                    <input type="text" class="form-control m-r-5" size="5" value="500">
+                                </div>
+                                <div class="form-group">
+                                    <label class="m-r-5">до</label>
+                                    <input type="text" class="form-control" size="5" value="1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 col-lg-push-4">
+                            <div class="form-group">
+                                <select class="kg-select2 form-control">
+                                    <option class="select2-option-level-1" value="">Категория права</option>
+                                    <option class="select2-option-level-2" value="" selected>Гражданское право</option>
+                                    <option class="select2-option-level-2" value="">Другое право</option>
+                                    <option class="select2-option-level-2" value="">Иное право</option>
+                                    <option class="select2-option-level-1" value="">Категория права-2</option>
+                                    <option class="select2-option-level-2" value="">Подкатегория-1</option>
+                                    <option class="select2-option-level-2" value="">Подкатегория-2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 col-lg-pull-8">
+                            <div class="main-search m-b-10">
+                                <input type="text" class="form-control" placeholder="Города">
+                                <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-box align-items-start add-block-list">
+                        <div class="add-block-list__content">
+                            <div class="label-sticker add-block">
+                                <div class="label-sticker__name">Москва</div>
+                                <span class="label-sticker__close label-sticker__close_big"></span>
+                            </div>
+                            <div class="label-sticker add-block">
+                                <div class="label-sticker__name">Александровск-Сахалинский</div>
+                                <span class="label-sticker__close label-sticker__close_big"></span>
+                            </div>
+                            <div class="label-sticker add-block">
+                                <div class="label-sticker__name">Тюмень</div>
+                                <span class="label-sticker__close label-sticker__close_big"></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-clear-all action-remove-all" type="button"></button>
+                    </div>
+                    <ul class="kg-list-inline fs-11 m-t-10">
+                        <li>
+                            <div class="checkbox checkbox-custom active">
+                                <label>
+                <span class="checkbox-custom__toggle">
+                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                </span>
+                                    <input type="checkbox" checked="">
+                                    <span class="checkbox-custom__caption">Показывать только участвующих в развитии проекта</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox checkbox-custom active">
+                                <label>
+                <span class="checkbox-custom__toggle">
+                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                </span>
+                                    <input type="checkbox" checked="">
+                                    <span class="checkbox-custom__caption">Показывать готовых для звонка</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox checkbox-custom active">
+                                <label>
+                <span class="checkbox-custom__toggle">
+                    <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png" alt="">
+                </span>
+                                    <input type="checkbox" checked="">
+                                    <span class="checkbox-custom__caption">Показывать только Online</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                @@include('_subject-card.html')
+                @@include('_subject-card.html')
+                <div class="text-center m-b-10">
+                    <a href="#" class="btn btn-primary fs-12">Показать еще</a>
+                </div>
+                <div class="text-center">
+                    @@include('_pagination.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('_main-footer.html')
+
+<script src="js/libs.min.js"></script>
+<script src="libs/typeahead/js/typeahead.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

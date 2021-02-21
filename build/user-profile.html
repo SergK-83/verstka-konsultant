@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/typeahead/css/typeahead.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+<body>
+
+<header id="mainHeader" class="main-header main-header_fixed-top">
+    <button type="button" id="mainHeaderToggle" class="main-header__toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="main-header__top">
+        <div class="container">
+            <div class="main-header__top-inner-wrap">
+                <div class="main-header__top-menu">
+                    <ul class="nav nav-pills">
+                        <li role="presentation"><a href="#" class="link-disabled" title="Находится в разработке">Оплата</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Компаниям</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Инвесторам</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">О проекте</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">История</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Услуги</a></li>
+                        <li role="presentation"><a href="#" title="В разработке">Юристы</a></li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation">
+                            <a href="#modalLocation" class="location" data-toggle="modal">
+                                <span class="text-primary"><u>Москва</u> <span class="dropdown__icon-down"></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="dropdown main-header__user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div class="flex-box align-items-center text-white">
+                                    <div>
+                                        <div class="main-header__user-title">Константин Константинович</div>
+                                        <div class="main-header__user-caption">Юрист</div>
+                                    </div>
+                                    <span class="dropdown__icon-down"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header__bottom">
+        <div class="container">
+            <div class="main-header__bottom-inner-wrap">
+                <div class="main-header__logo dropdown">
+    <img src="img/logo-109x106.png" alt="" class="dropdown-toggle" data-toggle="dropdown">
+    <ul class="dropdown-menu fs-11">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="authorization.html">Вход / Регистрация</a></li>
+        <li><a href="lawyer-list.html">Консультация в чате</a></li>
+        <li><a href="request-to-organ.html">Запрос в орган</a></li>
+        <li><a href="list-request-to-organs.html">Список запросов в органы</a></li>
+        <li><a href="question.html">Вопрос</a></li>
+        <li><a href="questions.html">Список вопросов</a></li>
+        <li><a href="modal-client-lawyer.html">Modal - Клиент/Юрист</a></li>
+        <li><a href="user-profile.html">Просмотр профиля пользователя</a></li>
+        <li><a href="lawyer-profile.html">Профиль Юриста</a></li>
+        <li><a href="lawyer-profile-view-lawyer.html">Профиль Юриста - взгляд Юриста</a></li>
+        <li><a href="lawyer-profile-editing.html">Профиль Юриста - Редактирование</a></li>
+    </ul>
+</div>
+
+                <div class="main-search main-search_disabled" title="Функционал находится в разработке">
+    <input type="text" class="form-control" placeholder="Поиск ...">
+    <button class="btn btn-primary main-search__btn"><img src="img/icon/icon-search-white.png" alt=""></button>
+</div>
+                <ul class="nav nav-pills">
+                    <li role="presentation">
+                        <a href="questions.html">Вопросы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать вопрос"></span></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Заказать документ</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="lawyer-list.html">Консультация в чате</a></li>
+                    <li role="presentation"><a href="phone-advice.html">Телефонная консультация</a></li>
+                    <li role="presentation">
+                        <a href="list-request-to-organs.html">Запросы в органы</a>
+                        <a href="#"><span class="kg-icon-circle-plus" title="Cоздать запрос"></span></a>
+                    </li>
+                    <li role="presentation"><a href="meetings.html">Встречa с юристом</a></li>
+                    <li role="presentation">
+                        <a href="#" class="link-disabled" title="Находится в разработке">Создать дело</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kg-desktop main-header__kg-desktop">
+    <div class="kg-desktop__menu">
+        <div class="kg-desktop__menu-inner-wrap">
+            <div class="kg-desktop__menu-avatar" style="display:none;">
+                <a href="#" title="Владимир Владимирович">
+                    <img src="img/avatar.png" class="kg-desktop__menu-avatar-img" alt="">
+                    <div class="kg-desktop__menu-avatar-caption">Владимир</div>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="authorization.html" class="btn btn-primary-inverse kg-desktop__menu-btn-login" title="Авторизация">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                </a>
+            </div>
+            <ul class="kg-desktop__tab-list">
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopNotice" data-toggle="tab" title="Уведомления">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_notice"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item kg-desktop__tab-item_disabled">
+                    <a href="#desktopDialog" data-toggle="tab" title="Чат в разработке">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_dialog"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopQuestion" data-toggle="tab" title="Вопросы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_question">
+                            <span class="kg-desktop__tab-notice" title="Новые уведомления"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopDocs" data-toggle="tab" title="Документы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_docs"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopPhoneAdvice" data-toggle="tab" title="Телефонные консультации">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_phone"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopOrganReport" data-toggle="tab" title="Ответы от органов">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_organ"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopDeal" data-toggle="tab" title="Услуги">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_deal"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopMeet" data-toggle="tab" title="Встречи">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_meet"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopMoney" data-toggle="tab" title="Финансы">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_money"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopFavorites" data-toggle="tab" title="Избранное">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_favorites"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+                <li class="kg-desktop__tab-item">
+                    <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                        <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</header>
+
+<main class="main-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="kg-box">
+                    <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                    <div class="thumb-subject">
+                        <a href="#" class="thumb-subject__img">
+                            <div class="thumb-subject__img-inner-wrap">
+                                <img src="img/avatar-78x78.png" alt="">
+                            </div>
+                            <span class="icon-status icon-status_online thumb-subject__icon-status" title="В сети"></span>
+                        </a>
+                        <a href="#" class="thumb-subject__name">
+                            <div>Иванов</div>
+                            <div>Иван Иванович</div>
+                        </a>
+                        <div class="thumb-subject__caption">
+                            <div>Адвокат / Москва</div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary btn-xs btn-block kg-btn-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Редактировать профиль
+                            <span class="kg-btn-dropdown-toggle__icon">
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_center">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-xs btn-primary-inverse btn-block m-t-10 text-black">Зарегистрироваться как юрист</a>
+                </div>
+
+                <div class="kg-box fs-11 text-muted">
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                </div>
+                <div class="kg-box fs-11 text-muted"> В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                </div>
+            </div>
+            <div class="col-xs-9">
+                <ul class="nav nav-pills p-t-20 m-b-20 fs-12">
+                    <li role="presentation" class="active" data-toggle="tab" data-target="#userProfileQuestions"><a href="#">Заданные вопросы</a></li>
+                    <li role="presentation" data-toggle="tab" data-target="#userProfileDeals"><a href="#">Дела</a></li>
+                    <li role="presentation" data-toggle="tab" data-target="#userProfileReviews"><a href="#">Отзывы юристов</a></li>
+                </ul>
+
+                <hr>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="userProfileQuestions">
+                        <h5 class="m-b-30">Заданные вопросы</h5>
+                        <div class="kg-box kg-box_p-r">
+                            <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                            <div class="kg-post">
+                                <div class="kg-post__header">
+                                    <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                    <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                </div>
+                                <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                    <div class="text-light fs-10">
+                                        <div>Илья Баев, г. Краснодар</div>
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-box kg-box_p-r">
+                            <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                            <div class="kg-post">
+                                <div class="kg-post__header">
+                                    <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                    <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                </div>
+                                <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                    <div class="text-light fs-10">
+                                        <div>Илья Баев, г. Краснодар</div>
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-box kg-box_p-r">
+                            <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                            <div class="kg-post">
+                                <div class="kg-post__header">
+                                    <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                    <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                </div>
+                                <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                    <div class="text-light fs-10">
+                                        <div>Илья Баев, г. Краснодар</div>
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center m-t-20">
+                            <a href="#" class="text-muted fs-11">Показать ещё...</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="userProfileDeals">
+                        <h5 class="m-b-30">Дела</h5>
+                        <div class="kg-box kg-box_p-r">
+                            <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                            <div class="kg-post">
+                                <div class="kg-post__header">
+                                    <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                    <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                </div>
+                                <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                    <div class="text-light fs-10">
+                                        <div>Илья Баев, г. Краснодар</div>
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-box kg-box_p-r">
+                            <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                            <div class="kg-post">
+                                <div class="kg-post__header">
+                                    <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                    <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                </div>
+                                <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                    <div class="text-light fs-10">
+                                        <div>Илья Баев, г. Краснодар</div>
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kg-box kg-box_p-r">
+                            <span class="icon-favorites icon-favorites_toggle kg-box__icon-favorites animation-scale-hover" title="Добавить в избраноое"></span>
+                            <div class="kg-post">
+                                <div class="kg-post__header">
+                                    <a href="#" class="kg-post__title">Товарищеское соглашение или договор инвестирования</a>
+                                    <a href="#" class="text-muted fs-11">Категория / Подкатегория</a>
+                                </div>
+                                <p class="kg-post__text">При наличии соответствующих оснований лица (арендатор и/или арендодатель), виновные в эксплуатации объекта капитального строительства без разрешения на ввод его в эксплуатацию, подлежат привлечению к административной ...</p>
+                                <div class="text-center"><a href="#" class="text-muted fs-10">Показать ещё...</a></div>
+                                <div class="flex-box justify-cont-between align-items-start m-t-20">
+                                    <div class="text-light fs-10">
+                                        <div>Илья Баев, г. Краснодар</div>
+                                        <div>27 октября, 15.41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center m-t-20">
+                            <a href="#" class="text-muted fs-11">Показать ещё...</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="userProfileReviews">
+                        <h5 class="m-b-30">Отзывы и видео</h5>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="thumb-icon thumb-icon_lg">
+                                    <div class="flex-box align-items-start">
+                                        <a href="#" class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                            <img src="img/avatar-78x78.png" alt="">
+                                        </a>
+                                        <div>
+                                            <div class="thumb-icon__info">
+                                                <div class="thumb-icon__name">
+                                                    Владимир Владимирович
+                                                </div>
+                                                <div class="thumb-icon__caption">
+                                                    <a href="#" class="link-underline">Берутся за наверняка проигрышное дело, чтобы содрать деньги, намекают на всязи в ДГИ</a>
+                                                </div>
+                                                <div class="text-light fs-10 m-t-5">Вчера, 20:28</div>
+                                                <div class="kg-rating-star">
+                                                    <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                                </div>
+                                            </div>
+                                            <div class="kg-video m-t-10">
+                                                <div class="kg-video-container">
+                                                    <div class="kg-video-container__play">
+                                                        <img src="img/icon/icon-play-red-47x47.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="kg-video__tools kg-video__tools_border-b">
+                                                    <div class="kg-video__tools-item">
+                                                        <img src="img/icon/icon-class-21x16.png" alt="">
+                                                        <span class="text-light m-l-5">1</span>
+                                                    </div>
+                                                    <div class="kg-video__tools-item">
+                                                        <img src="img/icon/icon-comment-15x15.png" alt="">
+                                                        <span class="text-light m-l-5">4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="comment-list">
+                                                <li>
+                                                    <div class="comment">
+                                                        <div class="comment__header">
+                                                            <div class="comment__header-info">
+                                                                <img src="img/avatar.png" alt="">
+                                                                <div class="comment__header-info-caption">
+                                                                    <b>Семен Петров</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment__body">
+                                                            <p class="comment__text">Хорошо сказал!</p>
+                                                            <span class="comment__date">три часа назад</span>
+                                                            <a href="#" class="comment__link-answer">Ответить</a>
+
+                                                            <div class="comment-input">
+                                                                <img class="comment-input__avatar" src="img/avatar.png" alt="">
+                                                                <div class="comment-input__field">
+                                                                    <textarea name="" rows="1" class="form-control textarea-autosize" placeholder="Написать комментарий..."></textarea>
+                                                                    <div class="comment-input__tools">
+                                                                        <div class="comment-input__tools-item">
+                                                                            <div class="kg-btn-file-load">
+                                                                                <label>
+                                                                                    <img src="img/icon/icon-staple.png" alt="">
+                                                                                    <input type="file" multiple>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment-input__tools-item">
+                                                                            <img src="img/icon/icon-smile-grey-17x17.png" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn input-comment__btn-send">
+                                                                    <img src="img/icon/icon-send-20x18.png" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="comment">
+                                                        <div class="comment__header">
+                                                            <div class="comment__header-info">
+                                                                <img src="img/avatar.png" alt="">
+                                                                <div class="comment__header-info-caption">
+                                                                    <b>Семен Петров</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment__body">
+                                                            <p class="comment__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+                                                            <span class="comment__date">три часа назад</span>
+                                                            <a href="#" class="comment__link-answer">Ответить</a>
+                                                        </div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="comment">
+                                                                <div class="comment__header">
+                                                                    <div class="comment__header-info">
+                                                                        <img src="img/avatar.png" alt="">
+                                                                        <div class="comment__header-info-caption">
+                                                                            <b>Семен Петров</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment__body">
+                                                                    <p class="comment__text">Хорошо сказал!</p>
+                                                                    <span class="comment__date">три часа назад</span>
+                                                                    <a href="#" class="comment__link-answer">Ответить</a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <div class="comment">
+                                                        <div class="comment__header">
+                                                            <div class="comment__header-info">
+                                                                <img src="img/avatar.png" alt="">
+                                                                <div class="comment__header-info-caption">
+                                                                    <b>Семен Петров</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment__body">
+                                                            <p class="comment__text">Хорошо сказал!</p>
+                                                            <span class="comment__date">три часа назад</span>
+                                                            <a href="#" class="comment__link-answer">Ответить</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <div class="comment-input">
+                                                <img class="comment-input__avatar" src="img/avatar.png" alt="">
+                                                <div class="comment-input__field">
+                                                    <textarea name="" rows="1" class="form-control textarea-autosize" placeholder="Написать комментарий..."></textarea>
+                                                    <div class="comment-input__tools">
+                                                        <div class="comment-input__tools-item">
+                                                            <div class="kg-btn-file-load">
+                                                                <label>
+                                                                    <img src="img/icon/icon-staple.png" alt="">
+                                                                    <input type="file" multiple>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-input__tools-item">
+                                                            <img src="img/icon/icon-smile-grey-17x17.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn input-comment__btn-send">
+                                                    <img src="img/icon/icon-send-20x18.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="thumb-icon thumb-icon_lg">
+                                    <div class="flex-box align-items-start">
+                                        <div>
+                                            <a href="#" class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                                <img src="img/avatar-78x78.png" alt="">
+                                            </a>
+                                            <div class="thumb-icon__img-caption">
+                                                <div class="text-primary">Клиент</div>
+                                                <div>Репутация</div>
+                                                <div class="m-b-10">0</div>
+                                                <div>Россия</div>
+                                                <div>Москва</div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="thumb-icon__info">
+                                                <div class="thumb-icon__name">
+                                                    Владимир Владимирович
+                                                </div>
+                                                <div class="thumb-icon__caption">
+                                                    <a href="#" class="link-underline">Берутся за наверняка проигрышное дело, чтобы содрать деньги, намекают на всязи в ДГИ</a>
+                                                </div>
+                                                <div class="text-light fs-10 m-t-5">Вчера, 20:28</div>
+                                                <div class="kg-rating-star">
+                                                    <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                                </div>
+
+                                                <div class="bkock-review m-t-10">
+                                                    <div class="bkock-review__body">
+                                                        <div class="bkock-review__title">Достоинства:</div>
+                                                        <p class="bkock-review__text">Приятный офис, отличная начальная психологическая обработка нас лохов.</p>
+
+                                                        <div class="bkock-review__title">Недостатки:</div>
+                                                        <p class="bkock-review__text">Обнадеживают напрасно в проигрышных делах, лишь бы на нас заработать, а не оказать квалифицированную помощь.</p>
+                                                        <div class="bkock-review__title">Комментарий:</div>
+                                                        <p class="bkock-review__text">Пользуются стрессовым состоянием клиентов. Прайс лист можно увидеть только из рук специалиста отдела качества и то мельком. Требуют сразу оплатить все расходы, расценки бешеные. Если захотите расторгнуть договор, деньги не вернут, даже если ещё практически...</p>
+                                                    </div>
+                                                    <div class="bkock-review__footer">
+                                                        <a href="#" class="link-underline fs-11">Читать весь отзыв</a>
+                                                        <div class="tools">
+                                                            <div class="tools__item">
+                                                                <img src="img/icon/icon-class-21x16.png" alt="">
+                                                                <span class="text-light m-l-5">1</span>
+                                                            </div>
+                                                            <div class="tools__item">
+                                                                <img src="img/icon/icon-comment-15x15.png" alt="">
+                                                                <span class="text-light m-l-5">4</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="thumb-icon thumb-icon_lg">
+                                    <div class="flex-box align-items-start">
+                                        <div>
+                                            <a href="#" class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                                <img src="img/avatar-78x78.png" alt="">
+                                            </a>
+                                            <div class="thumb-icon__img-caption">
+                                                <div class="text-primary">Клиент</div>
+                                                <div>Репутация</div>
+                                                <div class="m-b-10">0</div>
+                                                <div>Россия</div>
+                                                <div>Москва</div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="thumb-icon__info">
+                                                <div class="thumb-icon__name">
+                                                    Владимир Владимирович
+                                                </div>
+                                                <div class="thumb-icon__caption">
+                                                    <a href="#" class="link-underline">Берутся за наверняка проигрышное дело, чтобы содрать деньги, намекают на всязи в ДГИ</a>
+                                                </div>
+                                                <div class="text-light fs-10 m-t-5">Вчера, 20:28</div>
+                                                <div class="kg-rating-star">
+                                                    <div class="kg-rating-star__view js-rating-readonly" data-rate-value="3.5"></div>
+                                                </div>
+
+                                                <div class="bkock-review m-t-10">
+                                                    <div class="bkock-review__body">
+                                                        <div class="bkock-review__title">Достоинства:</div>
+                                                        <p class="bkock-review__text">Приятный офис, отличная начальная психологическая обработка нас лохов.</p>
+
+                                                        <div class="bkock-review__title">Недостатки:</div>
+                                                        <p class="bkock-review__text">Обнадеживают напрасно в проигрышных делах, лишь бы на нас заработать, а не оказать квалифицированную помощь.</p>
+                                                        <div class="bkock-review__title">Комментарий:</div>
+                                                        <p class="bkock-review__text">Пользуются стрессовым состоянием клиентов. Прайс лист можно увидеть только из рук специалиста отдела качества и то мельком. Требуют сразу оплатить все расходы, расценки бешеные. Если захотите расторгнуть договор, деньги не вернут, даже если ещё практически...</p>
+                                                    </div>
+                                                    <div class="bkock-review__footer">
+                                                        <a href="#" class="link-underline fs-11">Читать весь отзыв</a>
+                                                        <div class="tools">
+                                                            <div class="tools__item">
+                                                                <img src="img/icon/icon-class-21x16.png" alt="">
+                                                                <span class="text-light m-l-5">1</span>
+                                                            </div>
+                                                            <div class="tools__item">
+                                                                <img src="img/icon/icon-comment-15x15.png" alt="">
+                                                                <span class="text-light m-l-5">4</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="main-footer__aside">
+                    <div class="main-footer__logo">
+                        <img src="img/logo-109x106.png" alt="">
+                    </div>
+                    <div class="soc-net main-footer__soc-net">
+                        <a href="#" class="soc-net__item soc-net__item_fb animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_twitter animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_vk animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_youtube animation-scale-hover"></a>
+                        <a href="#" class="soc-net__item soc-net__item_inst animation-scale-hover"></a>
+                    </div>
+                    <div class="fs-10 text-light">© 2018 KonsultantRU</div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="main-footer__menu">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">О компании</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">Инвесторам</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="main-footer__menu-header">Развитие портала</h5>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="libs/typeahead/js/typeahead.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

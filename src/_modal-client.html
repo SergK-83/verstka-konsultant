@@ -1,0 +1,1085 @@
+<div id="modalClient" class="modal modal-custom" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                        src="img/icon/icon-close.png" alt=""></button>
+                <div class="flex-box align-items-center">
+                    <img class="m-r-10" src="img/logo_14x17.png" alt="">
+                    <span>Konsultant Group</span>
+                </div>
+            </div>
+            <div class="modal-body p-0">
+                <div class="kg-desktop">
+                    <div class="kg-desktop__menu">
+                        <div class="kg-desktop__menu-avatar">
+                            <a href="#" title="Владимир Владимирович">
+                                <img src="img/avatar.png" class="kg-desktop__menu-avatar-img" alt="">
+                                <div class="kg-desktop__menu-avatar-caption">Владимир</div>
+                            </a>
+                        </div>
+                        <ul class="kg-desktop__tab-list">
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopNotice" data-toggle="tab" title="Уведомления">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_notice"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item kg-desktop__tab-item_disabled">
+                                <a href="#desktopDialog" data-toggle="tab" title="Чат">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_dialog"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopQuestion" data-toggle="tab" title="Вопросы">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_question">
+                                        <span class="kg-desktop__tab-notice" title="Новые уведомления"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopDocs" data-toggle="tab" title="Документы">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_docs"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopPhoneAdvice" data-toggle="tab" title="Телефонные консультации">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_phone"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopOrganReport" data-toggle="tab" title="Ответы от органов">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_organ"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item active">
+                                <a href="#desktopDeal" data-toggle="tab" title="Услуги">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_deal"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopMeet" data-toggle="tab" title="Встречи">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_meet"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopMoney" data-toggle="tab" title="Финансы">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_money"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopFavorites" data-toggle="tab" title="Избранное">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_favorites"></div>
+                                </a>
+                            </li>
+                            <li class="kg-desktop__tab-item">
+                                <a href="#desktopSetting" data-toggle="tab" title="Настройки">
+                                    <div class="kg-desktop__tab-icon kg-desktop__tab-icon_setting"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content kg-desktop__content">
+                        <div class="tab-pane fade" id="desktopNotice">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li role="presentation" class="nav-stacked__item active">
+                                                <h5>Задать вопрос</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Заказать телефоную консультацию</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Задать документы</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Заказать консультацию в чате</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Обратиться в орган</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Создать дело</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Заказать встречу</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="kg-block-view__content">
+                                    <div class="kg-block-view__content-header">
+                                        <div class="thumb-icon">
+                                            <div class="thumb-icon__img">
+                                                <img src="img/icon/icon-notice_white.png" alt="">
+                                            </div>
+                                            <div class="thumb-icon__info">
+                                                Уведомления
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-primary-inverse btn-sm">Задать вопрос</a>
+                                    </div>
+                                    <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                        <div class="thumb-list thumb-list_vertical-split">
+                                            @@include('_thumb-icon.html')
+                                            @@include('_thumb-icon.html')
+                                            @@include('_thumb-icon.html')
+                                            @@include('_thumb-icon.html')
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desktopDialog">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                                            <li role="presentation" class="nav-stacked__item active">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name text-black">
+                                                                Владимир Владимирович
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Я думаю, что он должен...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        19 сен
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name text-black">
+                                                                Владимир Владимирович
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Я думаю, что он должен...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        19 сен
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name text-black">
+                                                                Владимир Владимирович
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Я думаю, что он должен...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        19 сен
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name text-black">
+                                                                Владимир Владимирович
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Я думаю, что он должен...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        19 сен
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary-inverse kg-block-view__menu-btn">Заказать
+                                        консультацию в чате</a>
+                                </div>
+                                <div class="kg-block-view__content justify-cont-between kg-drop-area">
+                                    <div class="kg-drop-area__lay">
+                                        <div class="kg-drop-area__container">
+                                            <div class="kg-drop-area__container-body">
+                                                Перетащите сюда файлы для загрузки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="kg-block-view__content-header">
+                                            <div class="thumb-icon">
+                                                <a href="#"
+                                                   class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                                    <img src="img/avatar-white-29x29.png" alt="">
+                                                </a>
+                                                <div class="thumb-icon__info">
+                                                    <div class="thumb-icon__name">
+                                                        <a href="#" class="text-white">Владимир Владимирович</a>
+                                                    </div>
+                                                    <div class="thumb-icon__caption">
+                                                        <span class="text-light">Юрист / Клиент</span>
+                                                    </div>
+                                                    <span class="icon-status icon-status_online thumb-icon__icon-status"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-box">
+                                                <div class="dropdown m-r-30">
+                                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                        Обратиться к этому юристу <span
+                                                            class="glyphicon glyphicon-menu-down m-l-10"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu_custom dropdown-menu_right">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="#" class="tools__item">
+                                                        <div class="kg-btn-file-load">
+                                                            <label>
+                                                                <img src="img/icon/icon-staple.png" alt="">
+                                                                <input type="file" multiple>
+                                                            </label>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="tools__item">
+                                                        <img src="img/icon/icon-spam.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="tools__item">
+                                                        <img src="img/icon/icon-search.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kg-block-view__content-body p-0 kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                            @@include('_chat-box.html')
+                                        </div>
+                                    </div>
+                                    <div class="kg-block-view__content-footer">
+                                        <div class="kg-sending-block">
+                                            <textarea class="form-control" rows="1"
+                                                      placeholder="Введите сообщение ..."></textarea>
+                                            <div class="flex-box align-items-center">
+                                                <div class="kg-btn-file-load m-l-20">
+                                                    <label>
+                                                        <img src="img/icon/icon-staple-20x22.png" alt="">
+                                                        <input type="file" multiple>
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-primary fs-12 m-l-20">Отправить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desktopQuestion">
+                            @@include('_modal-tab-question.html')
+                        </div>
+                        <div class="tab-pane fade" id="desktopDocs">
+                            @@include('_modal-tab-docs.html')
+                        </div>
+                        <div class="tab-pane fade" id="desktopPhoneAdvice">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name">
+                                                                <div class="thumb-icon__name-link">Алишер Усманов</div>
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <img src="img/icon/icon-arrow-right.png" class="m-r-5"
+                                                                     alt="">
+                                                                <span class="text-muted">Юрист</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-light fs-10 m-l-10">10:15</div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        <img src="img/icon/icon-check.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <ul class="nav-stacked__item-list">
+                                                    <li>
+                                                        <div class="kg-player">
+                                                            <div class="flex-box align-items-center">
+                                                                <a href="#" class="kg-player__action"><span
+                                                                        class="glyphicon glyphicon-play-circle"></span></a>
+                                                                <div class="kg-range-slider m-l-10">
+                                                                    <input class="kg-range-slider__input" type="text"
+                                                                           data-slider-tooltip="hide"
+                                                                           data-slider-min="0" data-slider-max="100"
+                                                                           data-slider-value="50">
+                                                                </div>
+                                                                <div class="kg-player__tools text-right">
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Переслать">
+                                                                        <span class="glyphicon glyphicon-share-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Повтор">
+                                                                        <span class="glyphicon glyphicon-refresh"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name">
+                                                                <div class="thumb-icon__name-link">Алишер Усманов</div>
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <img src="img/icon/icon-arrow-right.png" class="m-r-5"
+                                                                     alt="">
+                                                                <span class="text-muted">Клиент</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-light fs-10 m-l-10">10:15</div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        <img src="img/icon/icon-check.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <ul class="nav-stacked__item-list">
+                                                    <li>
+                                                        <div class="kg-player">
+                                                            <div class="flex-box align-items-center">
+                                                                <a href="#" class="kg-player__action"><span
+                                                                        class="glyphicon glyphicon-play-circle"></span></a>
+                                                                <div class="kg-range-slider m-l-10">
+                                                                    <input class="kg-range-slider__input" type="text"
+                                                                           data-slider-tooltip="hide"
+                                                                           data-slider-min="0" data-slider-max="100"
+                                                                           data-slider-value="50">
+                                                                </div>
+                                                                <div class="kg-player__tools text-right">
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Переслать">
+                                                                        <span class="glyphicon glyphicon-share-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Повтор">
+                                                                        <span class="glyphicon glyphicon-refresh"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kg-player">
+                                                            <div class="flex-box align-items-center">
+                                                                <a href="#" class="kg-player__action"><span
+                                                                        class="glyphicon glyphicon-play-circle"></span></a>
+                                                                <div class="kg-range-slider m-l-10">
+                                                                    <input class="kg-range-slider__input" type="text"
+                                                                           data-slider-tooltip="hide"
+                                                                           data-slider-min="0" data-slider-max="100"
+                                                                           data-slider-value="50">
+                                                                </div>
+                                                                <div class="kg-player__tools text-right">
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Переслать">
+                                                                        <span class="glyphicon glyphicon-share-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Повтор">
+                                                                        <span class="glyphicon glyphicon-refresh"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kg-player">
+                                                            <div class="flex-box align-items-center">
+                                                                <a href="#" class="kg-player__action"><span
+                                                                        class="glyphicon glyphicon-play-circle"></span></a>
+                                                                <div class="kg-range-slider m-l-10">
+                                                                    <input class="kg-range-slider__input" type="text"
+                                                                           data-slider-tooltip="hide"
+                                                                           data-slider-min="0" data-slider-max="100"
+                                                                           data-slider-value="50">
+                                                                </div>
+                                                                <div class="kg-player__tools text-right">
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Переслать">
+                                                                        <span class="glyphicon glyphicon-share-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Скачать">
+                                                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                                                    </a>
+                                                                    <a href="#" class="kg-player__tools-item"
+                                                                       title="Повтор">
+                                                                        <span class="glyphicon glyphicon-refresh"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary-inverse kg-block-view__menu-btn">Заказать
+                                        консультацию</a>
+                                </div>
+                                <div class="kg-block-view__content justify-cont-between">
+                                    <div>
+                                        <div class="kg-block-view__content-header">
+                                            <div class="thumb-icon">
+                                                <a href="#"
+                                                   class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                                    <img src="img/avatar.png" alt="">
+                                                </a>
+                                                <div class="thumb-icon__info">
+                                                    <div class="thumb-icon__name">
+                                                        <a href="#" class="text-white">Алишер Усманов</a>
+                                                    </div>
+                                                    <div class="thumb-icon__caption">
+                                                        <span class="text-light">Юрист / Москва</span>
+                                                    </div>
+                                                    <span class="icon-status icon-status_online thumb-icon__icon-status"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-box">
+                                                <div class="dropdown m-r-30">
+                                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                        Обратиться к этому юристу <span
+                                                            class="glyphicon glyphicon-menu-down m-l-10"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="#" class="tools__item">
+                                                        <img src="img/icon/icon-spam.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="tools__item">
+                                                        <img src="img/icon/icon-search.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown m-l-20">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu_right">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                            <div class="m-b-20">
+                                                <div class="flex-inline justify-cont-between align-items-start">
+                                                    <div>Ваша заявка на звонок принята. Скоро мы назначим Вам юриста
+                                                    </div>
+                                                    <span class="text-light m-l-20">10:15</span>
+                                                </div>
+                                            </div>
+                                            <div class="m-b-20">
+                                                <div class="flex-inline justify-cont-between align-items-start">
+                                                    <div>
+                                                        <span class="m-r-10">Юрист назначен:</span>
+                                                        <div class="thumb-icon thumb-icon_inline thumb-icon_xs p-0">
+                                                            <a href="#"
+                                                               class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                                                <img src="img/avatar.png" alt="">
+                                                            </a>
+                                                            <div class="thumb-icon__info">
+                                                                <div class="thumb-icon__name">
+                                                                    <a href="#" class="thumb-icon__name-link">Алишер
+                                                                        Усманов</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="m-l-10">Он позвонит Вам в течении 5 минут</span>
+                                                    </div>
+                                                    <span class="text-light m-l-20">10:15</span>
+                                                </div>
+                                            </div>
+                                            <div class="m-b-20">
+                                                <div class="flex-inline justify-cont-between align-items-start">
+                                                    <div>Консультация завершена</div>
+                                                    <span class="text-light m-l-20">10:15</span>
+                                                </div>
+                                            </div>
+                                            <div class="m-b-20">
+                                                <div class="flex-inline justify-cont-between align-items-start">
+                                                    <div class="kg-player">
+                                                        <div class="flex-box align-items-center">
+                                                            <a href="#" class="kg-player__action"><span
+                                                                    class="glyphicon glyphicon-play-circle"></span></a>
+                                                            <div class="kg-range-slider m-l-10">
+                                                                <input class="kg-range-slider__input" type="text"
+                                                                       data-slider-tooltip="hide" data-slider-min="0"
+                                                                       data-slider-max="100" data-slider-value="50">
+                                                            </div>
+                                                        </div>
+                                                        <div class="kg-player__tools text-right">
+                                                            <a href="#" class="kg-player__tools-item" title="Переслать">
+                                                                <span class="glyphicon glyphicon-share-alt"></span>
+                                                            </a>
+                                                            <a href="#" class="kg-player__tools-item" title="Скачать">
+                                                                <span class="glyphicon glyphicon-download-alt"></span>
+                                                            </a>
+                                                            <a href="#" class="kg-player__tools-item" title="Повтор">
+                                                                <span class="glyphicon glyphicon-refresh"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <span class="text-light m-l-20">10:15</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desktopOrganReport">
+                            @@include('_modal-tab-organ-report.html')
+                        </div>
+                        <div class="tab-pane fade in active" id="desktopDeal">
+                            @@include('_modal-tab-deal.html')
+                        </div>
+                        <div class="tab-pane fade" id="desktopMeet">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked nav-stacked_thumbs">
+                                            <li role="presentation" class="nav-stacked__item active">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name">
+                                                                <div class="thumb-icon__name-link">Владимир
+                                                                    Владимирович
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Юрист</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        <div>21.01.2018</div>
+                                                        <div class="m-t-5 text-right">
+                                                            <img src="img/icon/icon-check.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name">
+                                                                <div class="thumb-icon__name-link">Владимир
+                                                                    Владимирович
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Юрист</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        <div>21.01.2018</div>
+                                                        <div class="m-t-5 text-right">
+                                                            <img src="img/icon/icon-check.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name">
+                                                                <div class="thumb-icon__name-link">Владимир
+                                                                    Владимирович
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Юрист</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        <div>21.01.2018</div>
+                                                        <div class="m-t-5 text-right">
+                                                            <img src="img/icon/icon-check.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="thumb-icon">
+                                                    <div class="flex-box align-items-start">
+                                                        <div class="thumb-icon__img thumb-icon__img_avatar">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <div class="thumb-icon__info">
+                                                            <div class="thumb-icon__name">
+                                                                <div class="thumb-icon__name-link">Владимир
+                                                                    Владимирович
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-icon__caption">
+                                                                <span class="text-muted">Юрист</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-icon__side">
+                                                        <div>21.01.2018</div>
+                                                        <div class="m-t-5 text-right">
+                                                            <img src="img/icon/icon-check.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary-inverse kg-block-view__menu-btn">Заказать
+                                        встречу</a>
+                                </div>
+                                <div class="kg-block-view__content justify-cont-between kg-drop-area">
+                                    <div class="kg-drop-area__lay">
+                                        <div class="kg-drop-area__container">
+                                            <div class="kg-drop-area__container-body">
+                                                Перетащите сюда файлы для загрузки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="kg-block-view__content-header">
+                                            <div class="thumb-icon">
+                                                <a href="#"
+                                                   class="thumb-icon__img thumb-icon__img_avatar thumb-icon__img_hover">
+                                                    <img src="img/avatar-white-29x29.png" alt="">
+                                                </a>
+                                                <div class="thumb-icon__info">
+                                                    <div class="thumb-icon__name">
+                                                        <a href="#" class="text-white">Владимир Владимирович</a>
+                                                    </div>
+                                                    <div class="thumb-icon__caption">
+                                                        <span class="text-light">Юрист / Клиент</span>
+                                                    </div>
+                                                    <span class="icon-status icon-status_online thumb-icon__icon-status"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-box">
+                                                <div class="dropdown m-r-30">
+                                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                        Обратиться к этому юристу <span
+                                                            class="glyphicon glyphicon-menu-down m-l-10"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="#" class="tools__item">
+                                                        <div class="kg-btn-file-load">
+                                                            <label>
+                                                                <img src="img/icon/icon-staple.png" alt="">
+                                                                <input type="file" multiple>
+                                                            </label>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="tools__item">
+                                                        <img src="img/icon/icon-spam.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="tools__item">
+                                                        <img src="img/icon/icon-search.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown m-l-20">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <img src="img/icon/icon-menu_vertica-5x17l.png" alt="">
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu_right">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                            @@include('_chat-box.html')
+                                        </div>
+                                    </div>
+
+                                    <div class="kg-block-view__content-footer">
+                                        <div class="kg-sending-block">
+                                            <textarea class="form-control" rows="1"
+                                                      placeholder="Введите сообщение ..."></textarea>
+                                            <div class="flex-box align-items-center">
+                                                <div class="kg-btn-file-load m-l-20">
+                                                    <label>
+                                                        <img src="img/icon/icon-staple-20x22.png" alt="">
+                                                        <input type="file" multiple>
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-primary fs-12 m-l-20">Отправить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desktopMoney">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li role="presentation" class="nav-stacked__item active">
+                                                <h5>Финансы</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <h5>Оплаченные услуги</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary-inverse kg-block-view__menu-btn">Пополнить
+                                        баланс</a>
+                                </div>
+                                <div class="kg-block-view__content">
+                                    <div class="kg-block-view__content-header">
+                                        <div class="thumb-icon">
+                                            <div class="thumb-icon__img">
+                                                <img src="img/icon/icon-money-white-31x18.png" alt="">
+                                            </div>
+                                            <div class="thumb-icon__info">
+                                                Баланс
+                                            </div>
+                                        </div>
+                                        <div class="m-l-20">
+                                            <div class="text-right text-white fs-12">Баланс:</div>
+                                            <span class="text-light fs-11">1000 рублей</span>
+                                        </div>
+                                    </div>
+                                    <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desktopFavorites">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li role="presentation" class="nav-stacked__item active">
+                                                <div class="flex-box justify-cont-between">
+                                                    <h5>Юристы</h5>
+                                                    <small class="text-muted">12</small>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="flex-box justify-cont-between">
+                                                    <h5>Органы</h5>
+                                                    <small class="text-muted">12</small>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="flex-box justify-cont-between">
+                                                    <h5>Статьи</h5>
+                                                    <small class="text-muted">12</small>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="flex-box justify-cont-between">
+                                                    <h5>Видео</h5>
+                                                    <small class="text-muted">12</small>
+                                                </div>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item">
+                                                <div class="flex-box justify-cont-between">
+                                                    <h5>Клиенты</h5>
+                                                    <small class="text-muted">12</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="kg-block-view__content">
+                                    <div class="kg-block-view__content-header">
+                                        <div class="thumb-icon">
+                                            <div class="thumb-icon__img">
+                                                <img src="img/icon/icon-favorites-white-25x24.png" alt="">
+                                            </div>
+                                            <div class="thumb-icon__info">
+                                                Избранное
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desktopSetting">
+                            <div class="kg-block-view">
+                                <div class="kg-block-view__menu">
+                                    <div>
+                                        @@include('_block-search.html')
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li role="presentation" class="nav-stacked__item active" data-toggle="tab"
+                                                data-target="#settingPassword">
+                                                <h5>Почта и пароль</h5>
+                                            </li>
+                                            <li role="presentation" class="nav-stacked__item" data-toggle="tab" data-target="#settingNotice">
+                                                <h5>Уведомления</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-content kg-block-view__content">
+                                    <div class="tab-pane fade in active" id="settingPassword">
+                                        <div class="kg-block-view__content-header">
+                                            <div class="thumb-icon">
+                                                <div class="thumb-icon__img">
+                                                    <img src="img/icon/icon-setting-white-27x27.png" alt="">
+                                                </div>
+                                                <div class="thumb-icon__info">
+                                                    Настройки
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kg-block-view__content-body kg-block-view__content-body_scrolled" data-simplebar data-simplebar-auto-hide="false">
+                                            <form class="form-horizontal m-l-30 m-t-20">
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="col-sm-3 control-label">Почта</label>
+                                                    <div class="col-sm-5">
+                                                        <div class="kg-input">
+                                                            <input type="email" class="kg-input__input" id="inputEmail"
+                                                                   placeholder="example@example.dom">
+                                                            <div class="kg-input__bar"></div>
+                                                            <span class="help-block"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="currentPassword" class="col-sm-3 control-label">Текущий
+                                                        пароль</label>
+                                                    <div class="col-sm-5">
+                                                        <div class="kg-input">
+                                                            <input type="text" class="kg-input__input"
+                                                                   id="currentPassword">
+                                                            <div class="kg-input__bar"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="newPassword" class="col-sm-3 control-label">Новый
+                                                        пароль</label>
+                                                    <div class="col-sm-5">
+                                                        <div class="kg-input">
+                                                            <input type="text" class="kg-input__input" id="newPassword">
+                                                            <div class="kg-input__bar"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="repeatPassword" class="col-sm-3 control-label">Повторите
+                                                        пароль</label>
+                                                    <div class="col-sm-5">
+                                                        <div class="kg-input">
+                                                            <input type="text" class="kg-input__input"
+                                                                   id="repeatPassword">
+                                                            <div class="kg-input__bar"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-8 text-right">
+                                                    <button class="btn btn-primary btn-lg fs-12 m-t-30">Сохранить
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="settingNotice">
+                                        <div class="kg-block-view__content-header">
+                                            <div class="thumb-icon">
+                                                <div class="thumb-icon__img">
+                                                    <img src="img/icon/icon-setting-white-27x27.png" alt="">
+                                                </div>
+                                                <div class="thumb-icon__info">
+                                                    Настройки
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="kg-block-view__content-body">
+                                            <form class="form-horizontal m-l-30 m-t-20">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="checkbox checkbox-custom m-b-10 active">
+                                                            <label>
+                                                    <span class="checkbox-custom__toggle">
+                                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                             alt="">
+                                                    </span>
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkbox-custom__caption">Получать рассылку от KonsultantRU</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox checkbox-custom m-b-10 active">
+                                                            <label>
+                                                    <span class="checkbox-custom__toggle">
+                                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                             alt="">
+                                                    </span>
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkbox-custom__caption">Советы и рекомендации юристов по актуальным темам</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox checkbox-custom m-b-20 active">
+                                                            <label>
+                                                    <span class="checkbox-custom__toggle">
+                                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                             alt="">
+                                                    </span>
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkbox-custom__caption">Новости об акциях и скидках Правовед.RU</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="checkbox checkbox-custom m-b-10 active">
+                                                            <label>
+                                                    <span class="checkbox-custom__toggle">
+                                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                             alt="">
+                                                    </span>
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkbox-custom__caption">Получать уведомления по электронной
+почте о заказанных услугах</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox checkbox-custom m-b-10 active">
+                                                            <label>
+                                                    <span class="checkbox-custom__toggle">
+                                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                             alt="">
+                                                    </span>
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkbox-custom__caption">О сообщениях в чате</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox checkbox-custom m-b-10 active">
+                                                            <label>
+                                                    <span class="checkbox-custom__toggle">
+                                                        <img class="checkbox-custom__icon-ok" src="img/icon/icon-ok.png"
+                                                             alt="">
+                                                    </span>
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkbox-custom__caption">О новых ответах на вопросы</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
